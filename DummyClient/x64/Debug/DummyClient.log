@@ -1,0 +1,30 @@
+﻿  pch.cpp
+  ClientPacketHandler.cpp
+  DummyClient.cpp
+C:\Users\User\Documents\Visual Studio 2022\Server\DummyClient\ClientPacketHandler.cpp(15,2): warning C4060: switch문에 'case' 또는 'default' 레이블이 없습니다.
+  (소스 파일 '/ClientPacketHandler.cpp'을(를) 컴파일하는 중)
+  
+  코드를 생성하고 있습니다...
+  Enum.pb.cc
+  Protocol.pb.cc
+  Struct.pb.cc
+  코드를 생성하고 있습니다...
+ClientPacketHandler.obj : error LNK2019: "public: __cdecl BufferReader::BufferReader(unsigned char *,unsigned int,unsigned int)" (??0BufferReader@@QEAA@PEAEII@Z)"public: static void __cdecl ClientPacketHandler::HandlePacket(unsigned char *,int)" (?HandlePacket@ClientPacketHandler@@SAXPEAEH@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+ClientPacketHandler.obj : error LNK2019: "public: __cdecl BufferReader::~BufferReader(void)" (??1BufferReader@@QEAA@XZ)"public: static void __cdecl ClientPacketHandler::HandlePacket(unsigned char *,int)" (?HandlePacket@ClientPacketHandler@@SAXPEAEH@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+DummyClient.obj : error LNK2019: "public: __cdecl NetAddress::NetAddress(class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> >,unsigned short)" (??0NetAddress@@QEAA@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@G@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
+DummyClient.obj : error LNK2019: "public: static void __cdecl SocketUtils::Init(void)" (?Init@SocketUtils@@SAXXZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+DummyClient.obj : error LNK2019: "public: static void __cdecl SocketUtils::Clear(void)" (?Clear@SocketUtils@@SAXXZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+DummyClient.obj : error LNK2019: "public: __cdecl IocpCore::IocpCore(void)" (??0IocpCore@@QEAA@XZ)"void __cdecl std::_Construct_in_place<class IocpCore>(class IocpCore &)" (??$_Construct_in_place@VIocpCore@@$$V@std@@YAXAEAVIocpCore@@@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+DummyClient.obj : error LNK2019: "public: __cdecl IocpCore::~IocpCore(void)" (??1IocpCore@@QEAA@XZ)"public: void * __cdecl IocpCore::`scalar deleting destructor'(unsigned int)" (??_GIocpCore@@QEAAPEAXI@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+DummyClient.obj : error LNK2019: "public: bool __cdecl IocpCore::Dispatch(unsigned int)" (?Dispatch@IocpCore@@QEAA_NI@Z)"public: __cdecl `int __cdecl main(void)'::`4'::<lambda_2>::operator()(void)const " (??R<lambda_2>@?3??main@@YAHXZ@QEBA@XZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+DummyClient.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: virtual void * __cdecl Session::GetHandle(void)" (?GetHandle@Session@@UEAAPEAXXZ)
+DummyClient.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: virtual void __cdecl Session::Dispatch(struct IocpEvent *,int)" (?Dispatch@Session@@UEAAXPEAUIocpEvent@@H@Z)
+DummyClient.obj : error LNK2019: "public: __cdecl PacketSession::PacketSession(void)" (??0PacketSession@@QEAA@XZ)"public: __cdecl ServerSession::ServerSession(void)" (??0ServerSession@@QEAA@XZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+DummyClient.obj : error LNK2019: "public: virtual __cdecl PacketSession::~PacketSession(void)" (??1PacketSession@@UEAA@XZ)"public: virtual __cdecl ServerSession::~ServerSession(void)" (??1ServerSession@@UEAA@XZ) 함수에서 참조되는 확인할 수 없는 외부 기호
+DummyClient.obj : error LNK2001: 확인할 수 없는 외부 기호 "protected: virtual int __cdecl PacketSession::OnRecv(unsigned char *,int)" (?OnRecv@PacketSession@@MEAAHPEAEH@Z)
+DummyClient.obj : error LNK2019: "public: void __cdecl ThreadManager::Launch(class std::function<void __cdecl(void)>)" (?Launch@ThreadManager@@QEAAXV?$function@$$A6AXXZ@std@@@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
+DummyClient.obj : error LNK2019: "public: void __cdecl ThreadManager::Join(void)" (?Join@ThreadManager@@QEAAXXZ)main 함수에서 참조되는 확인할 수 없는 외부 기호
+DummyClient.obj : error LNK2019: "public: __cdecl ClientService::ClientService(class NetAddress,class std::shared_ptr<class IocpCore>,class std::function<class std::shared_ptr<class Session> __cdecl(void)>,int)" (??0ClientService@@QEAA@VNetAddress@@V?$shared_ptr@VIocpCore@@@std@@V?$function@$$A6A?AV?$shared_ptr@VSession@@@std@@XZ@3@H@Z)"void __cdecl std::_Construct_in_place<class ClientService,class NetAddress,class std::shared_ptr<class IocpCore>,class `int __cdecl main(void)'::`2'::<lambda_1>,int>(class ClientService &,class NetAddress &&,class std::shared_ptr<class IocpCore> &&,class `int __cdecl main(void)'::`2'::<lambda_1> &&,int &&)" (??$_Construct_in_place@VClientService@@VNetAddress@@V?$shared_ptr@VIocpCore@@@std@@V<lambda_1>@?1??main@@YAHXZ@H@std@@YAXAEAVClientService@@$$QEAVNetAddress@@$$QEAV?$shared_ptr@VIocpCore@@@0@$$QEAV<lambda_1>@?1??main@@YAHXZ@$$QEAH@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+DummyClient.obj : error LNK2001: 확인할 수 없는 외부 기호 "class std::unique_ptr<class ThreadManager,struct std::default_delete<class ThreadManager> > GThreadManager" (?GThreadManager@@3V?$unique_ptr@VThreadManager@@U?$default_delete@VThreadManager@@@std@@@std@@A)
+Protocol.pb.obj : error LNK2001: 확인할 수 없는 외부 기호 "class google::protobuf::internal::ExplicitlyConstructed<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,8> google::protobuf::internal::fixed_address_empty_string" (?fixed_address_empty_string@internal@protobuf@google@@3V?$ExplicitlyConstructed@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@$07@123@A)
+C:\Users\User\Documents\Visual Studio 2022\Server\Binaries\x64\DummyClient.exe : fatal error LNK1120: 18개의 확인할 수 없는 외부 참조입니다.

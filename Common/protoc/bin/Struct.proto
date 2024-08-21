@@ -1,0 +1,18 @@
+syntax = "proto3";
+package Protocol;
+
+import "Enum.proto";
+
+message PlayerInfo {
+	int32 playerId = 1;
+	string name = 2;
+	int32 posX = 3;
+	int32 posY = 4;
+}
+
+message PositionInfo {
+	CreatureState state = 1;
+	MoveDir moveDir = 2;
+	int32 posX = 3;
+	int32 posY = 4;
+}

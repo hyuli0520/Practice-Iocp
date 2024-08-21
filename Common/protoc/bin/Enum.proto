@@ -1,0 +1,42 @@
+syntax = "proto3";
+package Protocol;
+
+enum PlayerType
+{
+	PLAYER_TYPE_NONE = 0;
+	PLAYER_TYPE_KNIGHT = 1;
+	PLAYER_TYPE_MAGE = 2;
+	PLAYER_TYPE_ARCHER = 3;
+}
+
+enum PacketId 
+{
+	PKT_NONE = 0;
+	PKT_C_ENTER_GAME = 1;
+	PKT_S_ENTER_GAME = 2;
+	PKT_C_LEAVE_GAME = 3;
+	PKT_S_LEAVE_GAME = 4;
+	PKT_S_SPAWN = 5;
+	PKT_S_DESPAWN = 6;
+	PKT_C_MOVE = 7;
+	PKT_S_MOVE = 8;
+	PKT_C_CHAT = 9;
+	PKT_S_CHAT = 10;
+};
+
+enum CreatureState
+{
+	IDLE = 0;
+	MOVING = 1;
+	ATTACK = 2;
+	DEAD = 3;
+};
+
+enum MoveDir
+{
+	NONE = 0;
+	UP = 1;
+	DOWN = 2;
+	LEFT = 3;
+	RIGHT = 4;
+};
