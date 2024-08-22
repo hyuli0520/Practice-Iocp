@@ -1,23 +1,4 @@
-﻿  pch.cpp
-  BufferReader.cpp
-  BufferWriter.cpp
-  CoreGlobal.cpp
-  CoreMacro.cpp
-  CorePch.cpp
-  CoreTLS.cpp
-  GloabalQueue.cpp
-  IocpCore.cpp
-  IocpEvent.cpp
-  Job.cpp
-  LockQueue.cpp
-  JobQueue.cpp
-  Listener.cpp
-  NetAddress.cpp
-  RecvBuffer.cpp
-  SendBuffer.cpp
-  Service.cpp
-  Session.cpp
-  SocketUtils.cpp
+﻿  CoreGlobal.cpp
   ThreadManager.cpp
   코드를 생성하고 있습니다...
   ServerCore.vcxproj -> C:\Users\User\Documents\Visual Studio 2022\Server\Libraries\Libs\ServerCore\Debug\ServerCore.lib

@@ -20,6 +20,7 @@ public:
 	static void DestoryTLS();
 
 	static void DoGlobalQueueWork();
+	static void DistributeReservedJobs();
 
 private:
 	Mutex _lock;
