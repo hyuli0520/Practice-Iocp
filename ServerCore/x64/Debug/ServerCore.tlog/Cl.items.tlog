@@ -1,3 +1,4 @@
+C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\Allocator.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\Allocator.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\BufferReader.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\BufferReader.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\BufferWriter.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\BufferWriter.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\CoreGlobal.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\CoreGlobal.obj
@@ -12,9 +13,11 @@ C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\JobTimer.cpp;C:\Users\Us
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\LockQueue.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\LockQueue.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\JobQueue.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\JobQueue.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\Listener.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\Listener.obj
+C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\Memory.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\Memory.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\NetAddress.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\NetAddress.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\pch.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\pch.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\RecvBuffer.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\RecvBuffer.obj
+C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\RefCounting.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\RefCounting.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\SendBuffer.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\SendBuffer.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\Service.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\Service.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\Session.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\Session.obj
