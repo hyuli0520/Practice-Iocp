@@ -96,6 +96,9 @@
     <ClCompile Include="Memory.cpp">
       <Filter>Memory</Filter>
     </ClCompile>
+    <ClCompile Include="MemoryPool.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -177,6 +180,10 @@
       <Filter>Memory</Filter>
     </ClInclude>
     <ClInclude Include="Container.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryPool.h" />
+    <ClInclude Include="ObjectPool.h">
       <Filter>Memory</Filter>
     </ClInclude>
   </ItemGroup>

@@ -14,6 +14,7 @@ C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\LockQueue.cpp;C:\Users\U
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\JobQueue.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\JobQueue.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\Listener.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\Listener.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\Memory.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\Memory.obj
+C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\MemoryPool.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\MemoryPool.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\NetAddress.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\NetAddress.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\pch.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\pch.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\RecvBuffer.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\RecvBuffer.obj
