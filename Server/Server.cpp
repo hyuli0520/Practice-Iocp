@@ -13,6 +13,7 @@
 #include "GameSession.h"
 #include "GameSessionManager.h"
 #include "ServerPacketHandler.h"
+#include "Memory.h"
 #include "Job.h"
 #include "Room.h"
 #include <winsock2.h>
