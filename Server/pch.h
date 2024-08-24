@@ -8,8 +8,3 @@
 #include "ServerPacketHandler.h"
 #include "Utils.h"
 #include "GameSession.h"
-
-USING_SHARED_PTR(GameSession);
-USING_SHARED_PTR(Player);
-USING_SHARED_PTR(Room);
-
