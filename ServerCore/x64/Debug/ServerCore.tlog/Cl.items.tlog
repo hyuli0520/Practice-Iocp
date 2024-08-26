@@ -5,6 +5,8 @@ C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\CoreGlobal.cpp;C:\Users\
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\CoreMacro.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\CoreMacro.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\CorePch.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\CorePch.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\CoreTLS.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\CoreTLS.obj
+C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\DBConnection.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\DBConnection.obj
+C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\DBConnectionPool.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\DBConnectionPool.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\GlobalQueue.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\GlobalQueue.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\IocpCore.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\IocpCore.obj
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\IocpEvent.cpp;C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\x64\Debug\IocpEvent.obj

@@ -17,5 +17,7 @@ using namespace std;
 #include "SocketUtils.h"
 #include "SendBuffer.h"
 #include "Session.h"
+#include "Memory.h"
+#include "TypeCast.h"
 #include "ObjectPool.h"
 #include "LockQueue.h"

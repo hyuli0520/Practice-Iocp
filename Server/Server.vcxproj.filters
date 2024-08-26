@@ -16,9 +16,6 @@
     <Filter Include="Utils">
       <UniqueIdentifier>{6c77c1c4-e2f5-4c4c-8934-4a2cba7f4338}</UniqueIdentifier>
     </Filter>
-    <Filter Include="DataBase">
-      <UniqueIdentifier>{613351b9-ab21-4214-b97d-c15cd0039b1e}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameSession.cpp">

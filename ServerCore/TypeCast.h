@@ -74,7 +74,7 @@ template<typename Head, typename... Tail, typename T>
 struct IndexOf<TypeList<Head, Tail...>, T>
 {
 private:
-	enum { temp 0 = IndexOf<TypeList<Tail...>, T>::value };
+	enum { temp = IndexOf<TypeList<Tail...>, T>::value };
 
 public:
 	enum { value = (temp == -1) ? -1 : temp + 1 };
