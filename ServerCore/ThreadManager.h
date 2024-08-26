@@ -17,7 +17,7 @@ public:
 	void Join();
 
 	static void InitTLS();
-	static void DestoryTLS();
+	static void DestroyTLS();
 
 	static void DoGlobalQueueWork();
 	static void DistributeReservedJobs();

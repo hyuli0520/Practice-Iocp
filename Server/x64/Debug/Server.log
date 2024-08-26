@@ -36,8 +36,9 @@ Protocol.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
   1개 파일이 복사되었습니다.
   C:Protocol.cs
   1개 파일이 복사되었습니다.
-  C:\Users\User\Documents\Visual Studio 2022\Server\Common\protoc\bin\*.h을(를) 찾을 수 없습니다.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\Common\protoc\bin\*.h을(를) 찾을 수 없습니다.
   계속하려면 아무 키나 누르십시오 . . . 
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output 디렉터리가 슬래시로 끝나지 않습니다. Output 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
   pch.cpp
   Enum.pb.cc
   Protocol.pb.cc
@@ -46,39 +47,39 @@ Protocol.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
   GameSession.cpp
   GameSessionManager.cpp
   ObjectUtils.cpp
-C:\Users\User\Documents\Visual Studio 2022\Server\Server\ObjectUtils.cpp(14,35): warning C4244: '인수': 'const int64'에서 'int32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\ObjectUtils.cpp(14,35): warning C4244: '인수': 'const int64'에서 'int32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/ObjectUtils.cpp'을(를) 컴파일하는 중)
   
   Player.cpp
   Room.cpp
-C:\Users\User\Documents\Visual Studio 2022\Server\Server\Room.cpp(23,47): warning C4244: '인수': 'T'에서 'int32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\User\Documents\Visual Studio 2022\Server\Server\Room.cpp(23,47): warning C4244:         with
-C:\Users\User\Documents\Visual Studio 2022\Server\Server\Room.cpp(23,47): warning C4244:         [
-C:\Users\User\Documents\Visual Studio 2022\Server\Server\Room.cpp(23,47): warning C4244:             T=float
-C:\Users\User\Documents\Visual Studio 2022\Server\Server\Room.cpp(23,47): warning C4244:         ]
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(23,47): warning C4244: '인수': 'T'에서 'int32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(23,47): warning C4244:         with
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(23,47): warning C4244:         [
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(23,47): warning C4244:             T=float
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(23,47): warning C4244:         ]
   (소스 파일 '/Room.cpp'을(를) 컴파일하는 중)
   
-C:\Users\User\Documents\Visual Studio 2022\Server\Server\Room.cpp(24,47): warning C4244: '인수': 'T'에서 'int32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\User\Documents\Visual Studio 2022\Server\Server\Room.cpp(24,47): warning C4244:         with
-C:\Users\User\Documents\Visual Studio 2022\Server\Server\Room.cpp(24,47): warning C4244:         [
-C:\Users\User\Documents\Visual Studio 2022\Server\Server\Room.cpp(24,47): warning C4244:             T=float
-C:\Users\User\Documents\Visual Studio 2022\Server\Server\Room.cpp(24,47): warning C4244:         ]
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(24,47): warning C4244: '인수': 'T'에서 'int32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(24,47): warning C4244:         with
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(24,47): warning C4244:         [
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(24,47): warning C4244:             T=float
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(24,47): warning C4244:         ]
   (소스 파일 '/Room.cpp'을(를) 컴파일하는 중)
   
-C:\Users\User\Documents\Visual Studio 2022\Server\Server\Room.cpp(79,28): warning C4244: '인수': 'const uint64'에서 'int32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(79,28): warning C4244: '인수': 'const uint64'에서 'int32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/Room.cpp'을(를) 컴파일하는 중)
   
   Server.cpp
-C:\Users\User\Documents\Visual Studio 2022\Server\Server\Server.cpp(41,15): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Server.cpp(74,15): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
   (소스 파일 '/Server.cpp'을(를) 컴파일하는 중)
   
-C:\Users\User\Documents\Visual Studio 2022\Server\Server\Server.cpp(52,14): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Server.cpp(85,14): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
   (소스 파일 '/Server.cpp'을(를) 컴파일하는 중)
   
   ServerPacketHandler.cpp
   Utils.cpp
   코드를 생성하고 있습니다...
-C:\Users\User\Documents\Visual Studio 2022\Server\Server\Room.cpp(89): warning C4715: 'Room::HandleLeavePlayer': 모든 제어 경로에서 값을 반환하지는 않습니다.
-  Server.vcxproj -> C:\Users\User\Documents\Visual Studio 2022\Server\Binaries\x64\Server.exe
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(89): warning C4715: 'Room::HandleLeavePlayer': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  Server.vcxproj -> C:\Users\User\Documents\GitHub\Practice-Iocp\Binaries\x64\Server.exe
   'pwsh.exe'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
   배치 파일이 아닙니다.

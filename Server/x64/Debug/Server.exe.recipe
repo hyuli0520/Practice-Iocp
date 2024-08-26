@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\User\Documents\Visual Studio 2022\Server\Binaries\x64\Server.exe</FullPath>
+      <FullPath>C:\Users\User\Documents\GitHub\Practice-Iocp\Binaries\x64\Server.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

@@ -1,13 +1,12 @@
 ﻿#include "pch.h"
-#include <thread>
 #include "ThreadManager.h"
 #include "Listener.h"
 #include "Service.h"
 #include "GameSessionManager.h"
-#include "Memory.h"
 #include "Allocator.h"
 #include "Job.h"
 #include "Room.h"
+#include "DBConnectionPool.h"
 
 using namespace std;
 
@@ -46,7 +45,7 @@ void DoWorkerJob(ServerServiceRef& service)
 
 int main()
 {
-	SocketUtils::Init();
+
 	ServerPacketHandler::Init();
 
 
@@ -65,26 +64,27 @@ int main()
 
 	auto host = inet_ntoa(addr_in.sin_addr);
 	cout << host << endl;
-	ServerServiceRef service = make_shared<ServerService>(
+	ServerServiceRef service = MakeShared<ServerService>(
 		NetAddress(CtoW(host), 7777),
-		make_shared<IocpCore>(),
-		[]() {return make_shared<GameSession>(); },
+		MakeShared<IocpCore>(),
+		[]() {return MakeShared<GameSession>(); },
 		100);
 
 	assert(service->Start());
 
 	for (int32 i = 0; i < 5; i++)
 	{
-		GThreadManager->Launch([=]()
+		GThreadManager->Launch([&service]()
 			{
 				while (true)
 				{
-					service->GetIocpCore()->Dispatch();
+					DoWorkerJob(service);
 				}
 			});
 	}
 
-	GThreadManager->Join();
+	// Main Thread
+	DoWorkerJob(service);
 
-	SocketUtils::Clear();
+	GThreadManager->Join();
 }

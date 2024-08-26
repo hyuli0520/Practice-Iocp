@@ -28,7 +28,7 @@ void ThreadManager::Launch(function<void(void)> callback)
 		{
 			InitTLS();
 			callback();
-			DestoryTLS();
+			DestroyTLS();
 		}));
 }
 
@@ -48,7 +48,7 @@ void ThreadManager::InitTLS()
 	LThreadId = SThreadId.fetch_add(1);
 }
 
-void ThreadManager::DestoryTLS()
+void ThreadManager::DestroyTLS()
 {
 
 }
