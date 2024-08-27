@@ -22,7 +22,7 @@ bool DBConnectionPool::Connect(int32 connectionCount, const WCHAR* connectionStr
 	if (::SQLAllocHandle(SQL_HANDLE_ENV, SQL_NULL_HANDLE, &_environment) != SQL_SUCCESS)
 		return false;
 
-	if (::SQLSetEnvAttr(_environment, SQL_ATTR_ODBC_VERSION, reinterpret_cast<SQLPOINTER>(SQL_OV_ODBC3), 0 != SQL_SUCCESS))
+	if (::SQLSetEnvAttr(_environment, SQL_ATTR_ODBC_VERSION, reinterpret_cast<SQLPOINTER>(SQL_OV_ODBC3), 0) != SQL_SUCCESS)
 		return false;
 
 	for (int32 i = 0; i < connectionCount; i++)
