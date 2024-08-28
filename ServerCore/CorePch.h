@@ -13,6 +13,7 @@
 #include <windows.h>
 #include <assert.h>
 using namespace std;
+#include <mysqlx/xdevapi.h>
 
 #include "SocketUtils.h"
 #include "SendBuffer.h"

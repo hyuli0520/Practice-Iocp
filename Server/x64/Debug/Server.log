@@ -38,7 +38,6 @@ Protocol.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
   1개 파일이 복사되었습니다.
   C:\Users\User\Documents\GitHub\Practice-Iocp\Common\protoc\bin\*.h을(를) 찾을 수 없습니다.
   계속하려면 아무 키나 누르십시오 . . . 
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output 디렉터리가 슬래시로 끝나지 않습니다. Output 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
   pch.cpp
   Enum.pb.cc
   Protocol.pb.cc
@@ -47,10 +46,10 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v17
   GameSession.cpp
   GameSessionManager.cpp
   ObjectUtils.cpp
+  Player.cpp
 C:\Users\User\Documents\GitHub\Practice-Iocp\Server\ObjectUtils.cpp(14,35): warning C4244: '인수': 'const int64'에서 'int32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/ObjectUtils.cpp'을(를) 컴파일하는 중)
   
-  Player.cpp
   Room.cpp
 C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(23,47): warning C4244: '인수': 'T'에서 'int32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(23,47): warning C4244:         with
