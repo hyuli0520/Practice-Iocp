@@ -45,11 +45,8 @@ void DoWorkerJob(ServerServiceRef& service)
 
 int main()
 {
-	const char* url = ("mysqlx://root@127.0.0.1");
+	ASSERT_CRASH(GDBConnectionPool->Connect(1));
 
-	cout << "Creating session on" << url
-		<< "..." << endl;
-	
 
 	ServerPacketHandler::Init();
 

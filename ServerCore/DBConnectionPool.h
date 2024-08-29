@@ -11,15 +11,11 @@ public:
 	DBConnectionPool();
 	~DBConnectionPool();
 
-	bool Connect(int32 connectionCount, const WCHAR* connectionString);
+	bool Connect(int32 connectionCount);
 	void Clear();
-
-	DBConnection* Pop();
-	void Push(DBConnection* connection);
 
 private:
 	USE_LOCK;
-	SQLHENV _environment = SQL_NULL_HANDLE;
 	Vector<DBConnection*> _connections;
 };
 

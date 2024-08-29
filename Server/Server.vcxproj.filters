@@ -103,5 +103,6 @@
     <None Include="..\Common\protoc\bin\Struct.proto">
       <Filter>Protocol\Proto</Filter>
     </None>
+    <None Include="vcpkg.json" />
   </ItemGroup>
 </Project>
