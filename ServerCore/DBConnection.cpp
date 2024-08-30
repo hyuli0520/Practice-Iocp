@@ -14,9 +14,9 @@ bool DBConnection::Connect()
 		mysqlx::Session session(url);
 		cout << "Session accepted, creating collections..." << endl;
 
-		GetSchema(session);
+		mysqlx::Schema schema = session.getSchema("sunnight");
 	}
-	catch (const mysqlx::Error &err)
+	catch (const mysqlx::Error& err)
 	{
 		cout << "An error occured : " << err.what() << endl;
 		return false;
@@ -28,11 +28,6 @@ bool DBConnection::Connect()
 void DBConnection::Clear()
 {
 
-}
-
-void DBConnection::GetSchema(mysqlx::Session session)
-{
-	mysqlx::Schema schema = session.getSchema("sunnight");
 }
 
 bool DBConnection::Execute()
