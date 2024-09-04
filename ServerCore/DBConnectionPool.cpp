@@ -43,3 +43,21 @@ void DBConnectionPool::Clear()
 
 	_connections.clear();
 }
+
+DBConnection* DBConnectionPool::Pop()
+{
+	WRITE_LOCK;
+
+	if (_connections.empty())
+		return nullptr;
+
+	DBConnection* connection = _connections.back();
+	_connections.pop_back();
+	return connection;
+}
+
+void DBConnectionPool::Push(DBConnection* connection)
+{
+	WRITE_LOCK;
+	_connections.push_back(connection);
+}

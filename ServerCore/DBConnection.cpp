@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "DBConnection.h"
+#include "DBConnectionPool.h"
 
 /*-----------------
 	DBConnection
@@ -23,10 +24,12 @@ bool DBConnection::Connect()
 		//		.values(2, "admin2", "10010").execute();
 		//}
 		
-		auto result = table.select("player_id", "player_name", "player_location").execute();
+		auto result = Select(table, "player_id", "player_name", "player_location");
 
 		for (mysqlx::Row row : result)
-			cout << "player_id: " << row[0] << ", player_name: " << row[1] << ", player_location: " << row[2] << endl;
+			cout << "player_id: " << row[0] 
+				 << ", player_name: " << row[1] 
+				 << ", player_location: " << row[2] << endl;
 
 	}
 	catch (const mysqlx::Error& err)
