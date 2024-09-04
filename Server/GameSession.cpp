@@ -22,7 +22,8 @@ void GameSession::OnConnected()
 	{
 		
 		DBConnection* dbConn = GDBConnectionPool->Pop();
-		//dbConn->Select(table, "player_id");
+		mysqlx::Table table = dbConn->GetTable(dbConn->_schema, "player");
+		auto result = dbConn->Select(table, "player_id");
 	}
 
 	string input;

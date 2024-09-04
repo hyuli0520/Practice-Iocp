@@ -9,6 +9,8 @@
 class DBConnection
 {
 public:
+	void InitMysql();
+
 	bool Connect();
 	void Clear();
 
@@ -41,4 +43,8 @@ public:
 			cout << "An error occured : " << err.what() << endl;
 		}
 	}
+
+public:
+	mysqlx::Schema _schema;
+
 };
