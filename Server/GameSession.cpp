@@ -19,6 +19,12 @@ void GameSession::OnConnected()
 		return;
 	}
 
+	{
+		
+		DBConnection* dbConn = GDBConnectionPool->Pop();
+		//dbConn->Select(table, "player_id");
+	}
+
 	string input;
 	cin >> input;
 	Protocol::C_CHAT cChat;

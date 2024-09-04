@@ -11,12 +11,12 @@ bool DBConnection::Connect()
 	try
 	{
 		const char* url = ("mysqlx://root:1234@127.0.0.1");
-		cout << "Creating session on" << url << "..." << endl;
+		cout << "Creating session on " << url << "..." << endl;
 		mysqlx::Session session(url);
 
 		cout << "Session accepted, getting collections..." << endl;
 		mysqlx::Schema schema = session.getSchema("sunnight");
-		mysqlx::Table table = schema.getTable("player");
+		mysqlx::Table table = GetTable(schema, "player");
 
 
 		//{

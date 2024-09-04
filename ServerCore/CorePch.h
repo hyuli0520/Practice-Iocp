@@ -22,3 +22,6 @@ using namespace std;
 #include "TypeCast.h"
 #include "ObjectPool.h"
 #include "LockQueue.h"
+
+#include "DBConnection.h"
+#include "DBConnectionPool.h"

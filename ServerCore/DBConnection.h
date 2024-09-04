@@ -14,6 +14,20 @@ public:
 
 	bool Execute();
 
+	mysqlx::Table GetTable(mysqlx::Schema schema, string schemaName)
+	{
+		try
+		{
+			auto table = schema.getTable(schemaName);
+			cout << "Successful get table " << schemaName << endl;
+			return table;
+		}
+		catch (const mysqlx::Error& err)
+		{
+			cout << "An error occured : " << err.what() << endl;
+		}
+	}
+
 	template<typename... Args>
 	mysqlx::RowResult Select(mysqlx::Table table, Args... args)
 	{
