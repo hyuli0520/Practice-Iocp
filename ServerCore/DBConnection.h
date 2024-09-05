@@ -9,6 +9,7 @@
 class DBConnection
 {
 public:
+	DBConnection() = default;
 	void InitMysql();
 
 	bool Connect();
@@ -16,7 +17,7 @@ public:
 
 	bool Execute();
 
-	mysqlx::Table GetTable(mysqlx::Schema schema, string schemaName)
+	static mysqlx::Table GetTable(mysqlx::Schema schema, string schemaName)
 	{
 		try
 		{
@@ -45,6 +46,6 @@ public:
 	}
 
 public:
-	mysqlx::Schema _schema;
+	unique_ptr<mysqlx::Schema> _schema;
 
 };

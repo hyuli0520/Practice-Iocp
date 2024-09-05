@@ -13,7 +13,7 @@ void DBConnection::InitMysql()
 	mysqlx::Session session(url);
 
 	cout << "Session accepted, getting collections..." << endl;
-	_schema = session.getSchema("sunnight");
+	_schema = make_unique<mysqlx::Schema>(session.getSchema("sunnight"));
 }
 
 bool DBConnection::Connect()
@@ -21,21 +21,20 @@ bool DBConnection::Connect()
 	try
 	{
 		InitMysql();
-		mysqlx::Table table = GetTable(_schema, "player");
+		mysqlx::Table table = GetTable(*_schema, "player");
 
 
 		//{
 		//	auto insert = table.insert("player_id", "player_name", "player_location")
 		//		.values(2, "admin2", "10010").execute();
 		//}
-		
+
 		auto result = Select(table, "player_id", "player_name", "player_location");
 
 		for (mysqlx::Row row : result)
-			cout << "player_id: " << row[0] 
-				 << ", player_name: " << row[1] 
-				 << ", player_location: " << row[2] << endl;
-
+			cout << "player_id: " << row[0]
+			<< ", player_name: " << row[1]
+			<< ", player_location: " << row[2] << endl;
 	}
 	catch (const mysqlx::Error& err)
 	{

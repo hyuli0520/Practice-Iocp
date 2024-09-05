@@ -273,6 +273,8 @@ C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Server.cpp(67,14): warning C
   Utils.cpp
   코드를 생성하고 있습니다...
 C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(89): warning C4715: 'Room::HandleLeavePlayer': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\DBConnection.h(45): warning C4715: 'DBConnection::Select<char const *>': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\DBConnection.h(31): warning C4715: 'DBConnection::GetTable': 모든 제어 경로에서 값을 반환하지는 않습니다.
   Server.vcxproj -> C:\Users\User\Documents\GitHub\Practice-Iocp\Binaries\x64\Server.exe
   'pwsh.exe'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
   배치 파일이 아닙니다.
