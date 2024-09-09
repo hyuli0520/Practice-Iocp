@@ -33,4 +33,9 @@
 
 *.ipch
 *.vsidx
-*.opendb
+*.opendb    
+
+*.tlog
+*.idb
+*.pdb
+*.db
