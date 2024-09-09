@@ -17,11 +17,11 @@ public:
 
 	bool Execute();
 
-	static mysqlx::Table GetTable(mysqlx::Schema schema, string schemaName)
+	mysqlx::Table GetTable(string schemaName)
 	{
 		try
 		{
-			auto table = schema.getTable(schemaName);
+			auto table = _schema->getTable(schemaName);
 			cout << "Successful get table " << schemaName << endl;
 			return table;
 		}
@@ -45,7 +45,7 @@ public:
 		}
 	}
 
-public:
+private:
 	unique_ptr<mysqlx::Schema> _schema;
-
+	unique_ptr<mysqlx::Session> _session;
 };

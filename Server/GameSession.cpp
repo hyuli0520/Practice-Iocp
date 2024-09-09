@@ -21,9 +21,13 @@ void GameSession::OnConnected()
 
 	{
 		DBConnection* dbConn = GDBConnectionPool->Pop();
-		mysqlx::Table table = dbConn->GetTable(*dbConn->_schema, "player");
+		mysqlx::Table table = dbConn->GetTable("player");
 		auto result = dbConn->Select(table, "player_id");
-
+		
+		for (mysqlx::Row row : result)
+		{
+			cout << row[0] << endl;
+		}
 	}
 
 	string input;

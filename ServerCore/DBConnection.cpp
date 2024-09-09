@@ -10,10 +10,10 @@ void DBConnection::InitMysql()
 {
 	const char* url = ("mysqlx://root:1234@127.0.0.1");
 	cout << "Creating session on " << url << "..." << endl;
-	mysqlx::Session session(url);
+	_session = make_unique<mysqlx::Session>(url);
 
 	cout << "Session accepted, getting collections..." << endl;
-	_schema = make_unique<mysqlx::Schema>(session.getSchema("sunnight"));
+	_schema = make_unique<mysqlx::Schema>(_session->getSchema("sunnight"));
 }
 
 bool DBConnection::Connect()
@@ -21,20 +21,17 @@ bool DBConnection::Connect()
 	try
 	{
 		InitMysql();
-		mysqlx::Table table = GetTable(*_schema, "player");
-
+		mysqlx::Table table = GetTable("player");
 
 		//{
 		//	auto insert = table.insert("player_id", "player_name", "player_location")
 		//		.values(2, "admin2", "10010").execute();
 		//}
 
-		auto result = Select(table, "player_id", "player_name", "player_location");
+		auto result = Select(table, "player_id");
 
 		for (mysqlx::Row row : result)
-			cout << "player_id: " << row[0]
-			<< ", player_name: " << row[1]
-			<< ", player_location: " << row[2] << endl;
+			cout << "player_id: " << row[0] << endl;
 	}
 	catch (const mysqlx::Error& err)
 	{
