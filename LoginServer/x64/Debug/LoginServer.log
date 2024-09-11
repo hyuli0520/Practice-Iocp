@@ -1,0 +1,15 @@
+﻿  ObjectUtils.cpp
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\ObjectUtils.cpp(1,10): error C1083: 미리 컴파일된 헤더 파일을 열 수 없습니다. 'x64\Debug\LoginServer.pch': No such file or directory
+  Utils.cpp
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Utils.cpp(1,10): error C1083: 미리 컴파일된 헤더 파일을 열 수 없습니다. 'x64\Debug\LoginServer.pch': No such file or directory
+  Enum.pb.cc
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\Enum.pb.cc(141,1): error C1010: 미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. '#include "pch.h"'을(를) 소스에 추가하시겠습니까?
+  Login.cpp
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\Login.cpp(2,10): error C1083: 미리 컴파일된 헤더 파일을 열 수 없습니다. 'x64\Debug\LoginServer.pch': No such file or directory
+  pch.cpp
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\pch.cpp(1,10): error C1083: 미리 컴파일된 헤더 파일을 열 수 없습니다. 'x64\Debug\LoginServer.pch': No such file or directory
+  Protocol.pb.cc
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\Protocol.pb.cc(2081,1): error C1010: 미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. '#include "pch.h"'을(를) 소스에 추가하시겠습니까?
+  Struct.pb.cc
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\Struct.pb.cc(688,1): error C1010: 미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. '#include "pch.h"'을(를) 소스에 추가하시겠습니까?
+  코드를 생성하고 있습니다...
