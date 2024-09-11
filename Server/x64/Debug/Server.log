@@ -24,6 +24,18 @@ Protocol.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
   1개 파일이 복사되었습니다.
   C:Protocol.pb.cc
   1개 파일이 복사되었습니다.
+  C:Enum.pb.h
+  1개 파일이 복사되었습니다.
+  C:Enum.pb.cc
+  1개 파일이 복사되었습니다.
+  C:Struct.pb.h
+  1개 파일이 복사되었습니다.
+  C:Struct.pb.cc
+  1개 파일이 복사되었습니다.
+  C:Protocol.pb.h
+  1개 파일이 복사되었습니다.
+  C:Protocol.pb.cc
+  1개 파일이 복사되었습니다.
   C:Enum.cs
   1개 파일이 복사되었습니다.
   C:Struct.cs
@@ -38,6 +50,7 @@ Protocol.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
   1개 파일이 복사되었습니다.
   C:\Users\User\Documents\GitHub\Practice-Iocp\Common\protoc\bin\*.h을(를) 찾을 수 없습니다.
   계속하려면 아무 키나 누르십시오 . . . 
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output 디렉터리가 슬래시로 끝나지 않습니다. Output 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
   pch.cpp
 C:\Users\User\Documents\GitHub\Practice-Iocp\Server\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996: 'std::iterator<std::input_iterator_tag,T,Distance,Pointer,Reference>': warning STL4015: The std::iterator class template (used as a base class to provide typedefs) is deprecated in C++17. (The <iterator> header is NOT deprecated.) The C++ Standard has never required user-defined iterators to derive from std::iterator. To fix this warning, stop deriving from std::iterator and start providing publicly accessible typedefs named iterator_category, value_type, difference_type, pointer, and reference. Note that value_type is required to be non-const, even for constant iterators. You can define _SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING or _SILENCE_ALL_CXX17_DEPRECATION_WARNINGS to suppress this warning.
 C:\Users\User\Documents\GitHub\Practice-Iocp\Server\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         with

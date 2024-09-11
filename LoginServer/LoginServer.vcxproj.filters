@@ -31,12 +31,6 @@
     <ClCompile Include="Login.cpp">
       <Filter>Main</Filter>
     </ClCompile>
-    <ClCompile Include="..\Server\ObjectUtils.cpp">
-      <Filter>Utils</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Server\Utils.cpp">
-      <Filter>Utils</Filter>
-    </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>Main</Filter>
     </ClCompile>
@@ -49,16 +43,19 @@
     <ClCompile Include="Protocol.pb.cc">
       <Filter>Protocol</Filter>
     </ClCompile>
+    <ClCompile Include="ObjectUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginServer.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Login.h">
       <Filter>Main</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Server\ObjectUtils.h">
-      <Filter>Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Server\Utils.h">
-      <Filter>Utils</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>Main</Filter>
@@ -71,6 +68,12 @@
     </ClInclude>
     <ClInclude Include="Protocol.pb.h">
       <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Utils</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
