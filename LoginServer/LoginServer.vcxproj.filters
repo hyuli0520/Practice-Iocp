@@ -28,7 +28,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Login.cpp">
+    <ClCompile Include="LoginSession.cpp">
       <Filter>Main</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
@@ -54,7 +54,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Login.h">
+    <ClInclude Include="LoginSession.h">
       <Filter>Main</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">

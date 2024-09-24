@@ -34,6 +34,7 @@ USING_SHARED_PTR(ClientService);
 USING_SHARED_PTR(SendBuffer);
 USING_SHARED_PTR(Job);
 USING_SHARED_PTR(JobQueue);
+USING_SHARED_PTR(LoginSession);
 
 #define size16(val)		static_cast<int16>(sizeof(val))
 #define size32(val)		static_cast<int32>(sizeof(val))
