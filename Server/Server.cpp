@@ -72,7 +72,7 @@ int main()
 		[]() {return MakeShared<GameSession>(); },
 		100);
 
-	assert(service->Start());
+	ASSERT_CRASH(service->Start());
 
 	for (int32 i = 0; i < 5; i++)
 	{

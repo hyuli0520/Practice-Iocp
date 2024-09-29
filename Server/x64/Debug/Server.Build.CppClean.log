@@ -13,8 +13,8 @@ c:\users\user\documents\github\practice-iocp\server\x64\debug\player.obj
 c:\users\user\documents\github\practice-iocp\server\x64\debug\objectutils.obj
 c:\users\user\documents\github\practice-iocp\server\x64\debug\gamesessionmanager.obj
 c:\users\user\documents\github\practice-iocp\server\x64\debug\gamesession.obj
-c:\users\user\documents\github\practice-iocp\binaries\x64\server.exe
 c:\users\user\documents\github\practice-iocp\server\x64\debug\server.ilk
+c:\users\user\documents\github\practice-iocp\binaries\x64\server.exe
 c:\users\user\documents\github\practice-iocp\binaries\x64\server.pdb
 c:\users\user\documents\github\practice-iocp\binaries\x64\mysqlcppconn8-2-vs14.dll
 c:\users\user\documents\github\practice-iocp\binaries\x64\zlibd1.dll
@@ -31,4 +31,3 @@ c:\users\user\documents\github\practice-iocp\server\x64\debug\server.tlog\link.c
 c:\users\user\documents\github\practice-iocp\server\x64\debug\server.tlog\link.read.1.tlog
 c:\users\user\documents\github\practice-iocp\server\x64\debug\server.tlog\link.write.1.tlog
 c:\users\user\documents\github\practice-iocp\server\x64\debug\server.tlog\server.write.1u.tlog
-c:\users\user\documents\github\practice-iocp\server\x64\debug\server.tlog\vcpkginstallmanifestx64-windows.read.1u.tlog

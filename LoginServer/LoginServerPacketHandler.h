@@ -23,6 +23,8 @@ public:
 		return GPacketHandler[header->id](session, buffer, len);
 	}
 
+	// 받기
+	
 	// 보내기
 	template<typename T>
 	static SendBufferRef MakeSendBuffer(T& pkt, Protocol::PacketId id)

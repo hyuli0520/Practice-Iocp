@@ -22,7 +22,7 @@ void JobTimer::Distribute(uint64 now)
 	if (_distributing.exchange(true) == true)
 		return;
 
-	vector<TimerItem> items;
+	Vector<TimerItem> items;
 	{
 		WRITE_LOCK;
 

@@ -150,6 +150,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Enum.pb.h" />
+    <ClInclude Include="LoginServerPacketHandler.h" />
     <ClInclude Include="LoginSession.h" />
     <ClInclude Include="ObjectUtils.h" />
     <ClInclude Include="pch.h" />
@@ -161,6 +162,7 @@
     <ClCompile Include="Enum.pb.cc">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="LoginServerPacketHandler.cpp" />
     <ClCompile Include="LoginSession.cpp" />
     <ClCompile Include="LoginServer.cpp" />
     <ClCompile Include="ObjectUtils.cpp" />

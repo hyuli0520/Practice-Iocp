@@ -4,10 +4,10 @@ template<typename T>
 class LockQueue
 {
 public:
-	void Push(T job)
+	void Push(T item)
 	{
 		WRITE_LOCK;
-		_items.push(job);
+		_items.push(item);
 	}
 
 	T Pop()
@@ -21,21 +21,31 @@ public:
 		return ret;
 	}
 
-	void PopAll(OUT vector<T>& items)
+	//void PopAll(OUT Vector<T>& items)
+	//{
+	//	WRITE_LOCK;
+	//	while (T item = Pop())
+	//		items.push_back(item);
+	//}
+
+	void PopAll(OUT Vector<T>& items)
 	{
 		WRITE_LOCK;
-		while (T item = Pop())
-			items.push_back(item);
+		while (!_items.empty())
+		{
+			items.push_back(_items.front());
+			_items.pop();
+		}
 	}
 
 	void Clear()
 	{
 		WRITE_LOCK;
-		_items = queue<T>();
+		_items = Queue<T>();
 	}
 
 private:
 	USE_LOCK;
-	queue<T> _items;
+	Queue<T> _items;
 };
 

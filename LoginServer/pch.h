@@ -6,3 +6,5 @@
 #include "Enum.pb.h"
 #include "Struct.pb.h"
 #include "Utils.h"
+#include "LoginServerPacketHandler.h"
+#include "LoginSession.h"

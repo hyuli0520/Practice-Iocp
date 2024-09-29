@@ -58,6 +58,10 @@ void GameSession::OnRecvPacket(BYTE* buffer, int32 len)
 	PacketHeader* header = reinterpret_cast<PacketHeader*>(buffer);
 
 	ServerPacketHandler::HandlePacket(session, buffer, len);
+	
+	char recvBuffer[4096];
+	::memcpy(recvBuffer, &buffer[4], header->size - sizeof(PacketHeader));
+	cout << "RecvBuffer : " << recvBuffer << endl;
 
 	cout << "OnRecv Len = " << len << endl;
 

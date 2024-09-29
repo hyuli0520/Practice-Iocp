@@ -27,11 +27,11 @@ void JobQueue::Push(JobRef job, bool pushOnly)
 
 void JobQueue::Execute()
 {
+	LCurrentJobQueue = this;
+
 	while (true)
 	{
-		LCurrentJobQueue = this;
-
-		vector<JobRef> jobs;
+		Vector<JobRef> jobs;
 		_jobs.PopAll(OUT jobs);
 
 		const int32 jobCount = static_cast<int32>(jobs.size());

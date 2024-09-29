@@ -4,12 +4,17 @@ C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\vcpkg_installed\x64-win
   C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\common.h(38,1):
   이전에 명령줄에서 선언된 '_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING'
   
+  Enum.pb.cc
+  Protocol.pb.cc
+  Struct.pb.cc
+  코드를 생성하고 있습니다...
+  LoginServerPacketHandler.cpp
   LoginSession.cpp
   LoginServer.cpp
-C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServer.cpp(42,15): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServer.cpp(45,15): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
   (소스 파일 '/LoginServer.cpp'을(를) 컴파일하는 중)
   
-C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServer.cpp(53,14): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServer.cpp(56,14): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
   (소스 파일 '/LoginServer.cpp'을(를) 컴파일하는 중)
   
   ObjectUtils.cpp

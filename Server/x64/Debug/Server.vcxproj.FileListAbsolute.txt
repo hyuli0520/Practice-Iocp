@@ -1,1 +1,2 @@
 C:\Users\User\Documents\Visual Studio 2022\Server\x64\Debug\Server.exe
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\x64\Debug\Server.vcxproj.CopyComplete

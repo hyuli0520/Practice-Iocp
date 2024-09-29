@@ -35,7 +35,7 @@ public:
 
 private:
     USE_LOCK;
-    priority_queue<TimerItem> _items;
+    PriorityQueue<TimerItem> _items;
     Atomic<bool> _distributing = false;
 };
 
