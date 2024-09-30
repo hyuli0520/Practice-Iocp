@@ -28,6 +28,8 @@ void GameSession::OnConnected()
 		{
 			cout << row[0] << endl;
 		}
+
+		GDBConnectionPool->Push(dbConn);
 	}
 
 	string input;
