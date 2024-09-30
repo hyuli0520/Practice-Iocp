@@ -74,7 +74,9 @@ bool ServerPacketHandler::Handle_C_CHAT(PacketSessionRef& session, Protocol::C_C
 	if (room == nullptr)
 		return false;
 
-	//GRoom->DoAsync(&Room::BroadCast, sendBuffer);
+	auto sendBuffer = ServerPacketHandler::MakeSendBuffer(pkt, Protocol::PacketId::PKT_C_CHAT);
+
+	room->DoAsync(&Room::BroadCast, sendBuffer, static_cast<uint64>(0));
 
 	return true;
 }
