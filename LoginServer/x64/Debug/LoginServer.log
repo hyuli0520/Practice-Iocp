@@ -9,6 +9,23 @@ C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\vcpkg_installed\x64-win
   Struct.pb.cc
   코드를 생성하고 있습니다...
   LoginServerPacketHandler.cpp
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(21,45): error C2039: 'name': 'Protocol::C_LOGIN'의 멤버가 아닙니다.
+  (소스 파일 '/LoginServerPacketHandler.cpp'을(를) 컴파일하는 중)
+  C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\Protocol.pb.h(1626,7):
+  'Protocol::C_LOGIN' 선언을 참조하십시오.
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(21,55): error C2039: 'password': 'Protocol::C_LOGIN'의 멤버가 아닙니다.
+  (소스 파일 '/LoginServerPacketHandler.cpp'을(를) 컴파일하는 중)
+  C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\Protocol.pb.h(1626,7):
+  'Protocol::C_LOGIN' 선언을 참조하십시오.
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(21,30): error C2660: 'LoginSession::Response': 함수는 1개의 인수를 사용하지 않습니다.
+  (소스 파일 '/LoginServerPacketHandler.cpp'을(를) 컴파일하는 중)
+  C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginSession.h(17,7):
+  'LoginSession::Response' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(21,30):
+  인수 목록 '()'을(를) 일치시키는 동안
+  
   LoginSession.cpp
   LoginServer.cpp
 C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServer.cpp(45,15): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
@@ -22,6 +39,3 @@ C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServer.cpp(56,14):
   코드를 생성하고 있습니다...
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\DBConnection.h(32): warning C4715: 'DBConnection::GetTable': 모든 제어 경로에서 값을 반환하지는 않습니다.
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\DBConnection.h(46): warning C4715: 'DBConnection::Select<char const *,char const *>': 모든 제어 경로에서 값을 반환하지는 않습니다.
-  LoginServer.vcxproj -> C:\Users\User\Documents\GitHub\Practice-Iocp\Binaries\x64\LoginServer.exe
-  'pwsh.exe'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
-  배치 파일이 아닙니다.

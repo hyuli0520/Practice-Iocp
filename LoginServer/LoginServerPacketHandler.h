@@ -24,6 +24,7 @@ public:
 	}
 
 	// 받기
+	static bool Handle_C_LOGIN_GAME(PacketSessionRef& session, Protocol::C_LOGIN& pkt);
 	
 	// 보내기
 	template<typename T>

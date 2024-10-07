@@ -45,3 +45,9 @@ message S_CHAT {
 	PlayerInfo playerInfo = 1;
 	string msg = 2;
 }
+
+message C_LOGIN {
+	string id = 1;
+	string name = 2;
+	string password = 3;
+}
