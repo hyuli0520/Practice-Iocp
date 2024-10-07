@@ -20,6 +20,10 @@ void LoginSession::OnRecvPacket(BYTE* buffer, int32 len)
 	::memcpy(recvBuffer, &buffer[4], header->size - sizeof(PacketHeader));
 	cout << "RecvBuffer : " << recvBuffer << endl;
 
+	Protocol::C_LOGIN cLogin;
+	auto session = std::static_pointer_cast<PacketSession>(shared_from_this());
+	auto success = LoginServerPacketHandler::Handle_C_LOGIN_GAME(session, cLogin);
+
 	cout << "RecvMessage : " << buffer << endl;
 }
 
@@ -27,9 +31,9 @@ void LoginSession::OnSend(int32 len)
 {
 }
 
-void LoginSession::Response()
+bool LoginSession::Response()
 {
-	auto dbConn = GDBConnectionPool->Pop();
+	DBConnection* dbConn = GDBConnectionPool->Pop();
 	mysqlx::Table table = dbConn->GetTable("player");
 	auto result = dbConn->Select(table, "player_name", "password");
 	for (mysqlx::Row row : result)
@@ -43,4 +47,7 @@ void LoginSession::Response()
 			}
 		}
 	}
+	GDBConnectionPool->Push(dbConn);
+
+	return true;
 }

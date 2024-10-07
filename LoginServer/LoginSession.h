@@ -16,7 +16,7 @@ public:
 
 	string GetName() { return _name; }
 
-	void Response();
+	bool Response();
 private:
 	string _id, _pw, _name;
 };
