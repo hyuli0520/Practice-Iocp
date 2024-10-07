@@ -45,9 +45,6 @@ void DoWorkerJob(ServerServiceRef& service)
 
 int main()
 {
-	ASSERT_CRASH(GDBConnectionPool->Connect(1));
-
-
 	ServerPacketHandler::Init();
 
 
