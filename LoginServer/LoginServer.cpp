@@ -61,7 +61,7 @@ int main()
 		[]() {return MakeShared<LoginSession>(); },
 		10);
 
-	assert(service->Start());
+	ASSERT_CRASH(service->Start());
 
 	for (int32 i = 0; i < 5; i++)
 	{

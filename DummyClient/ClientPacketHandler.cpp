@@ -2,15 +2,11 @@
 #include "ClientPacketHandler.h"
 #include "BufferReader.h"
 
-void ClientPacketHandler::HandlePacket(BYTE* buffer, int32 len)
+PacketHandlerFunc GPacketHandler[UINT16_MAX];
+
+bool Handle_INVALID(PacketSessionRef& session, BYTE* buffer, int32 len)
 {
-	BufferReader br(buffer, len);
-
-	PacketHeader header;
-	br >> header;
-
-	switch (header.id)
-	{
-		break;
-	}
+	PacketHeader* header = reinterpret_cast<PacketHeader*>(buffer);
+	// TODO : Log
+	return false;
 }

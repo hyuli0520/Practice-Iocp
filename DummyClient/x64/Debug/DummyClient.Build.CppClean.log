@@ -7,16 +7,11 @@ c:\users\user\documents\visual studio 2022\server\dummyclient\x64\debug\clientpa
 c:\users\user\documents\visual studio 2022\server\dummyclient\x64\debug\struct.pb.obj
 c:\users\user\documents\visual studio 2022\server\dummyclient\x64\debug\protocol.pb.obj
 c:\users\user\documents\visual studio 2022\server\dummyclient\x64\debug\enum.pb.obj
-c:\users\user\documents\visual studio 2022\server\binaries\x64\libprotobuf-lited.dll
-c:\users\user\documents\visual studio 2022\server\binaries\x64\libprotobufd.dll
-c:\users\user\documents\visual studio 2022\server\binaries\x64\dummyclient.exe
-c:\users\user\documents\visual studio 2022\server\dummyclient\x64\debug\dummyclient.ilk
-c:\users\user\documents\visual studio 2022\server\binaries\x64\dummyclient.pdb
-c:\users\user\documents\visual studio 2022\server\dummyclient\x64\debug\dummyclient.tlog\cl.command.1.tlog
-c:\users\user\documents\visual studio 2022\server\dummyclient\x64\debug\dummyclient.tlog\cl.items.tlog
-c:\users\user\documents\visual studio 2022\server\dummyclient\x64\debug\dummyclient.tlog\cl.read.1.tlog
-c:\users\user\documents\visual studio 2022\server\dummyclient\x64\debug\dummyclient.tlog\cl.write.1.tlog
-c:\users\user\documents\visual studio 2022\server\dummyclient\x64\debug\dummyclient.tlog\dummyclient.write.1u.tlog
-c:\users\user\documents\visual studio 2022\server\dummyclient\x64\debug\dummyclient.tlog\link.command.1.tlog
-c:\users\user\documents\visual studio 2022\server\dummyclient\x64\debug\dummyclient.tlog\link.read.1.tlog
-c:\users\user\documents\visual studio 2022\server\dummyclient\x64\debug\dummyclient.tlog\link.write.1.tlog
+c:\users\user\documents\github\practice-iocp\dummyclient\x64\debug\vc143.idb
+c:\users\user\documents\github\practice-iocp\dummyclient\x64\debug\vc143.pdb
+c:\users\user\documents\github\practice-iocp\dummyclient\x64\debug\dummyclient.tlog\cl.command.1.tlog
+c:\users\user\documents\github\practice-iocp\dummyclient\x64\debug\dummyclient.tlog\cl.read.1.tlog
+c:\users\user\documents\github\practice-iocp\dummyclient\x64\debug\dummyclient.tlog\cl.write.1.tlog
+c:\users\user\documents\github\practice-iocp\dummyclient\x64\debug\dummyclient.tlog\link-cvtres.read.1.tlog
+c:\users\user\documents\github\practice-iocp\dummyclient\x64\debug\dummyclient.tlog\link-cvtres.write.1.tlog
+c:\users\user\documents\github\practice-iocp\dummyclient\x64\debug\dummyclient.tlog\link-rc.read.1.tlog

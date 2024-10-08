@@ -24,9 +24,6 @@
     <ClCompile Include="GameSessionManager.cpp">
       <Filter>Main</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>Main</Filter>
-    </ClCompile>
     <ClCompile Include="Server.cpp">
       <Filter>Main</Filter>
     </ClCompile>
@@ -54,15 +51,15 @@
     <ClCompile Include="ObjectUtils.cpp">
       <Filter>Utils</Filter>
     </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameSession.h">
       <Filter>Main</Filter>
     </ClInclude>
     <ClInclude Include="GameSessionManager.h">
-      <Filter>Main</Filter>
-    </ClInclude>
-    <ClInclude Include="pch.h">
       <Filter>Main</Filter>
     </ClInclude>
     <ClInclude Include="ServerPacketHandler.h">
@@ -87,6 +84,9 @@
       <Filter>Utils</Filter>
     </ClInclude>
     <ClInclude Include="ObjectUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
       <Filter>Utils</Filter>
     </ClInclude>
   </ItemGroup>
