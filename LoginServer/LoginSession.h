@@ -7,7 +7,7 @@
 class LoginSession : public PacketSession
 {
 public:
-	~LoginSession() { }
+	virtual ~LoginSession() { }
 
 	virtual void OnConnected() override;
 	virtual void OnDisconnected() override;
