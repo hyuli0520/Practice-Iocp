@@ -3,6 +3,16 @@
 
 void LoginSession::OnConnected()
 {
+	auto session = std::static_pointer_cast<PacketSession>(shared_from_this());
+
+	Protocol::C_LOGIN cLogin;
+	bool success = LoginServerPacketHandler::Handle_C_LOGIN_GAME(session, cLogin);
+
+	if (!success)
+	{
+		cout << "Fail to Login Game" << endl;
+		return;
+	}
 }
 
 void LoginSession::OnDisconnected()

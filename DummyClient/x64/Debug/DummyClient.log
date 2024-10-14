@@ -1,4 +1,212 @@
-﻿DummyClient.obj : error LNK2019: "public: static void * __cdecl PoolAllocator::Alloc(int)" (?Alloc@PoolAllocator@@SAPEAXH@Z)"class ClientService * __cdecl xnew<class ClientService,class NetAddress,class std::shared_ptr<class IocpCore>,class `int __cdecl main(void)'::`2'::<lambda_1>,int>(class NetAddress &&,class std::shared_ptr<class IocpCore> &&,class `int __cdecl main(void)'::`2'::<lambda_1> &&,int &&)" (??$xnew@VClientService@@VNetAddress@@V?$shared_ptr@VIocpCore@@@std@@V<lambda_1>@?1??main@@YAHXZ@H@@YAPEAVClientService@@$$QEAVNetAddress@@$$QEAV?$shared_ptr@VIocpCore@@@std@@$$QEAV<lambda_1>@?1??main@@YAHXZ@$$QEAH@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+﻿  pch.cpp
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996: 'std::iterator<std::input_iterator_tag,T,Distance,Pointer,Reference>': warning STL4015: The std::iterator class template (used as a base class to provide typedefs) is deprecated in C++17. (The <iterator> header is NOT deprecated.) The C++ Standard has never required user-defined iterators to derive from std::iterator. To fix this warning, stop deriving from std::iterator and start providing publicly accessible typedefs named iterator_category, value_type, difference_type, pointer, and reference. Note that value_type is required to be non-const, even for constant iterators. You can define _SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING or _SILENCE_ALL_CXX17_DEPRECATION_WARNINGS to suppress this warning.
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         with
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         [
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             T=mysqlx::abi2::r0::internal::Result_detail::Warning_src::Value,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Distance=__int64,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Pointer=mysqlx::abi2::r0::Warning *,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Reference=mysqlx::abi2::r0::Warning &
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         ]
+  (소스 파일 'pch.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(7115,1):
+  'std::iterator' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\detail\result.h(161,15):
+  	컴파일되는 클래스 템플릿 인스턴스화 'mysqlx::abi2::r0::internal::List_initializer<mysqlx::abi2::r0::internal::Array_source<mysqlx::abi2::r0::internal::Result_detail::Warning_src,mysqlx::abi2::r0::internal::Result_detail::Warning_src::Value,__int64,mysqlx::abi2::r0::Warning *,mysqlx::abi2::r0::Warning &>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(1800,84):
+  	컴파일되는 클래스 템플릿 인스턴스화 'mysqlx::abi2::r0::internal::Iterator<Impl,Value_type,Distance,Pointer,Reference>'에 대한 참조를 확인하세요.
+          with
+          [
+              Impl=mysqlx::abi2::r0::internal::Array_src_impl<mysqlx::abi2::r0::internal::Result_detail::Warning_src,mysqlx::abi2::r0::internal::Result_detail::Warning_src::Value>,
+              Value_type=mysqlx::abi2::r0::internal::Result_detail::Warning_src::Value,
+              Distance=__int64,
+              Pointer=mysqlx::abi2::r0::Warning *,
+              Reference=mysqlx::abi2::r0::Warning &
+          ]
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996: 'std::iterator<std::input_iterator_tag,T,Distance,Pointer,Reference>': warning STL4015: The std::iterator class template (used as a base class to provide typedefs) is deprecated in C++17. (The <iterator> header is NOT deprecated.) The C++ Standard has never required user-defined iterators to derive from std::iterator. To fix this warning, stop deriving from std::iterator and start providing publicly accessible typedefs named iterator_category, value_type, difference_type, pointer, and reference. Note that value_type is required to be non-const, even for constant iterators. You can define _SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING or _SILENCE_ALL_CXX17_DEPRECATION_WARNINGS to suppress this warning.
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         with
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         [
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             T=mysqlx::abi2::r0::DbDoc,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Distance=std::iterator_traits<mysqlx::abi2::r0::DbDoc *>::difference_type,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Pointer=mysqlx::abi2::r0::DbDoc *,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Reference=mysqlx::abi2::r0::DbDoc &
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         ]
+  (소스 파일 'pch.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(7115,1):
+  'std::iterator' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\detail\result.h(414,12):
+  	컴파일되는 클래스 템플릿 인스턴스화 'mysqlx::abi2::r0::internal::Iterator<mysqlx::abi2::r0::internal::Doc_result_detail,mysqlx::abi2::r0::DbDoc,std::iterator_traits<T *>::difference_type,mysqlx::abi2::r0::DbDoc *,mysqlx::abi2::r0::DbDoc &>'에 대한 참조를 확인하세요.
+          with
+          [
+              T=mysqlx::abi2::r0::DbDoc
+          ]
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996: 'std::iterator<std::input_iterator_tag,T,Distance,Pointer,Reference>': warning STL4015: The std::iterator class template (used as a base class to provide typedefs) is deprecated in C++17. (The <iterator> header is NOT deprecated.) The C++ Standard has never required user-defined iterators to derive from std::iterator. To fix this warning, stop deriving from std::iterator and start providing publicly accessible typedefs named iterator_category, value_type, difference_type, pointer, and reference. Note that value_type is required to be non-const, even for constant iterators. You can define _SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING or _SILENCE_ALL_CXX17_DEPRECATION_WARNINGS to suppress this warning.
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         with
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         [
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             T=mysqlx::abi2::r0::Row,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Distance=std::iterator_traits<mysqlx::abi2::r0::Row *>::difference_type,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Pointer=mysqlx::abi2::r0::Row *,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Reference=mysqlx::abi2::r0::Row &
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         ]
+  (소스 파일 'pch.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(7115,1):
+  'std::iterator' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\result.h(651,11):
+  	컴파일되는 클래스 템플릿 인스턴스화 'mysqlx::abi2::r0::internal::List_initializer<mysqlx::abi2::r0::internal::Row_result_detail<mysqlx::abi2::r0::Columns> &>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(1800,84):
+  	컴파일되는 클래스 템플릿 인스턴스화 'mysqlx::abi2::r0::internal::Iterator<mysqlx::abi2::r0::internal::Row_result_detail<mysqlx::abi2::r0::Columns>,mysqlx::abi2::r0::Row,std::iterator_traits<T *>::difference_type,mysqlx::abi2::r0::Row *,mysqlx::abi2::r0::Row &>'에 대한 참조를 확인하세요.
+          with
+          [
+              T=mysqlx::abi2::r0::Row
+          ]
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\settings.h(362,17): warning C4996: 'std::iterator<std::input_iterator_tag,std::pair<Option,mysqlx::abi2::r0::Value>,ptrdiff_t,std::pair<Option,mysqlx::abi2::r0::Value> *,std::pair<Option,mysqlx::abi2::r0::Value> &>': warning STL4015: The std::iterator class template (used as a base class to provide typedefs) is deprecated in C++17. (The <iterator> header is NOT deprecated.) The C++ Standard has never required user-defined iterators to derive from std::iterator. To fix this warning, stop deriving from std::iterator and start providing publicly accessible typedefs named iterator_category, value_type, difference_type, pointer, and reference. Note that value_type is required to be non-const, even for constant iterators. You can define _SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING or _SILENCE_ALL_CXX17_DEPRECATION_WARNINGS to suppress this warning.
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\settings.h(362,17): warning C4996:         with
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\settings.h(362,17): warning C4996:         [
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\settings.h(362,17): warning C4996:             Option=mysqlx::abi2::r0::SessionOption
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\settings.h(362,17): warning C4996:         ]
+  (소스 파일 'pch.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(7115,1):
+  'std::iterator' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\settings.h(362,17):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\settings.h(687,12):
+  	컴파일되는 클래스 템플릿 인스턴스화 'mysqlx::abi2::r0::internal::iterator<mysqlx::abi2::r0::SessionOption,mysqlx::abi2::r0::common::Settings_impl::iterator>'에 대한 참조를 확인하세요.
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\settings.h(362,17): warning C4996: 'std::iterator<std::input_iterator_tag,std::pair<mysqlx::abi2::r0::ClientOption,mysqlx::abi2::r0::Value>,ptrdiff_t,std::pair<mysqlx::abi2::r0::ClientOption,mysqlx::abi2::r0::Value> *,std::pair<mysqlx::abi2::r0::ClientOption,mysqlx::abi2::r0::Value> &>': warning STL4015: The std::iterator class template (used as a base class to provide typedefs) is deprecated in C++17. (The <iterator> header is NOT deprecated.) The C++ Standard has never required user-defined iterators to derive from std::iterator. To fix this warning, stop deriving from std::iterator and start providing publicly accessible typedefs named iterator_category, value_type, difference_type, pointer, and reference. Note that value_type is required to be non-const, even for constant iterators. You can define _SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING or _SILENCE_ALL_CXX17_DEPRECATION_WARNINGS to suppress this warning.
+  (소스 파일 'pch.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(7115,1):
+  'std::iterator' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\settings.h(362,17):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\settings.h(822,12):
+  	컴파일되는 클래스 템플릿 인스턴스화 'mysqlx::abi2::r0::internal::iterator<mysqlx::abi2::r0::ClientOption,mysqlx::abi2::r0::common::Settings_impl::iterator>'에 대한 참조를 확인하세요.
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996: 'std::iterator<std::input_iterator_tag,T,Distance,Pointer,Reference>': warning STL4015: The std::iterator class template (used as a base class to provide typedefs) is deprecated in C++17. (The <iterator> header is NOT deprecated.) The C++ Standard has never required user-defined iterators to derive from std::iterator. To fix this warning, stop deriving from std::iterator and start providing publicly accessible typedefs named iterator_category, value_type, difference_type, pointer, and reference. Note that value_type is required to be non-const, even for constant iterators. You can define _SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING or _SILENCE_ALL_CXX17_DEPRECATION_WARNINGS to suppress this warning.
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         with
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         [
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             T=mysqlx::abi2::r0::internal::Schema_detail::Collection_src::Value,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Distance=__int64,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Pointer=mysqlx::abi2::r0::Collection *,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Reference=mysqlx::abi2::r0::Collection &
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         ]
+  (소스 파일 'pch.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(7115,1):
+  'std::iterator' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\xdevapi.h(699,18):
+  	컴파일되는 클래스 템플릿 인스턴스화 'mysqlx::abi2::r0::internal::List_initializer<mysqlx::abi2::r0::internal::List_source<mysqlx::abi2::r0::internal::Schema_detail::Collection_src,mysqlx::abi2::r0::internal::Schema_detail::Collection_src::Value,__int64,mysqlx::abi2::r0::Collection *,mysqlx::abi2::r0::Collection &>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(1800,84):
+  	컴파일되는 클래스 템플릿 인스턴스화 'mysqlx::abi2::r0::internal::Iterator<Impl,Value_type,Distance,Pointer,Reference>'에 대한 참조를 확인하세요.
+          with
+          [
+              Impl=mysqlx::abi2::r0::internal::Schema_detail::Collection_src,
+              Value_type=mysqlx::abi2::r0::internal::Schema_detail::Collection_src::Value,
+              Distance=__int64,
+              Pointer=mysqlx::abi2::r0::Collection *,
+              Reference=mysqlx::abi2::r0::Collection &
+          ]
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996: 'std::iterator<std::input_iterator_tag,T,Distance,Pointer,Reference>': warning STL4015: The std::iterator class template (used as a base class to provide typedefs) is deprecated in C++17. (The <iterator> header is NOT deprecated.) The C++ Standard has never required user-defined iterators to derive from std::iterator. To fix this warning, stop deriving from std::iterator and start providing publicly accessible typedefs named iterator_category, value_type, difference_type, pointer, and reference. Note that value_type is required to be non-const, even for constant iterators. You can define _SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING or _SILENCE_ALL_CXX17_DEPRECATION_WARNINGS to suppress this warning.
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         with
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         [
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             T=mysqlx::abi2::r0::internal::Query_src::Value,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Distance=__int64,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Pointer=mysqlx::abi2::r0::string *,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Reference=mysqlx::abi2::r0::string &
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         ]
+  (소스 파일 'pch.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(7115,1):
+  'std::iterator' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\xdevapi.h(714,14):
+  	컴파일되는 클래스 템플릿 인스턴스화 'mysqlx::abi2::r0::internal::List_initializer<mysqlx::abi2::r0::internal::List_source<mysqlx::abi2::r0::internal::Schema_detail::Name_src,mysqlx::abi2::r0::internal::Query_src::Value,__int64,mysqlx::abi2::r0::string *,mysqlx::abi2::r0::string &>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(1800,84):
+  	컴파일되는 클래스 템플릿 인스턴스화 'mysqlx::abi2::r0::internal::Iterator<Impl,Value_type,Distance,Pointer,Reference>'에 대한 참조를 확인하세요.
+          with
+          [
+              Impl=mysqlx::abi2::r0::internal::Schema_detail::Name_src,
+              Value_type=mysqlx::abi2::r0::internal::Query_src::Value,
+              Distance=__int64,
+              Pointer=mysqlx::abi2::r0::string *,
+              Reference=mysqlx::abi2::r0::string &
+          ]
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996: 'std::iterator<std::input_iterator_tag,T,Distance,Pointer,Reference>': warning STL4015: The std::iterator class template (used as a base class to provide typedefs) is deprecated in C++17. (The <iterator> header is NOT deprecated.) The C++ Standard has never required user-defined iterators to derive from std::iterator. To fix this warning, stop deriving from std::iterator and start providing publicly accessible typedefs named iterator_category, value_type, difference_type, pointer, and reference. Note that value_type is required to be non-const, even for constant iterators. You can define _SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING or _SILENCE_ALL_CXX17_DEPRECATION_WARNINGS to suppress this warning.
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         with
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         [
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             T=mysqlx::abi2::r0::internal::Schema_detail::Table_src::Value,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Distance=__int64,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Pointer=mysqlx::abi2::r0::Table *,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Reference=mysqlx::abi2::r0::Table &
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         ]
+  (소스 파일 'pch.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(7115,1):
+  'std::iterator' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\xdevapi.h(732,13):
+  	컴파일되는 클래스 템플릿 인스턴스화 'mysqlx::abi2::r0::internal::List_initializer<mysqlx::abi2::r0::internal::List_source<mysqlx::abi2::r0::internal::Schema_detail::Table_src,mysqlx::abi2::r0::internal::Schema_detail::Table_src::Value,__int64,mysqlx::abi2::r0::Table *,mysqlx::abi2::r0::Table &>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(1800,84):
+  	컴파일되는 클래스 템플릿 인스턴스화 'mysqlx::abi2::r0::internal::Iterator<Impl,Value_type,Distance,Pointer,Reference>'에 대한 참조를 확인하세요.
+          with
+          [
+              Impl=mysqlx::abi2::r0::internal::Schema_detail::Table_src,
+              Value_type=mysqlx::abi2::r0::internal::Schema_detail::Table_src::Value,
+              Distance=__int64,
+              Pointer=mysqlx::abi2::r0::Table *,
+              Reference=mysqlx::abi2::r0::Table &
+          ]
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996: 'std::iterator<std::input_iterator_tag,T,Distance,Pointer,Reference>': warning STL4015: The std::iterator class template (used as a base class to provide typedefs) is deprecated in C++17. (The <iterator> header is NOT deprecated.) The C++ Standard has never required user-defined iterators to derive from std::iterator. To fix this warning, stop deriving from std::iterator and start providing publicly accessible typedefs named iterator_category, value_type, difference_type, pointer, and reference. Note that value_type is required to be non-const, even for constant iterators. You can define _SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING or _SILENCE_ALL_CXX17_DEPRECATION_WARNINGS to suppress this warning.
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         with
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         [
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             T=mysqlx::abi2::r0::internal::Session_detail::Schema_src::Value,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Distance=__int64,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Pointer=mysqlx::abi2::r0::Schema *,
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:             Reference=mysqlx::abi2::r0::Schema &
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         ]
+  (소스 파일 'pch.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(7115,1):
+  'std::iterator' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\xdevapi.h(1798,14):
+  	컴파일되는 클래스 템플릿 인스턴스화 'mysqlx::abi2::r0::internal::List_initializer<mysqlx::abi2::r0::internal::List_source<mysqlx::abi2::r0::internal::Session_detail::Schema_src,mysqlx::abi2::r0::internal::Session_detail::Schema_src::Value,__int64,mysqlx::abi2::r0::Schema *,mysqlx::abi2::r0::Schema &>>'에 대한 참조를 확인하세요.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(1800,84):
+  	컴파일되는 클래스 템플릿 인스턴스화 'mysqlx::abi2::r0::internal::Iterator<Impl,Value_type,Distance,Pointer,Reference>'에 대한 참조를 확인하세요.
+          with
+          [
+              Impl=mysqlx::abi2::r0::internal::Session_detail::Schema_src,
+              Value_type=mysqlx::abi2::r0::internal::Session_detail::Schema_src::Value,
+              Distance=__int64,
+              Pointer=mysqlx::abi2::r0::Schema *,
+              Reference=mysqlx::abi2::r0::Schema &
+          ]
+  
+  ClientPacketHandler.cpp
+  DummyClient.cpp
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\DummyClient.cpp(61,15): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (소스 파일 '/DummyClient.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\DummyClient\DummyClient.cpp(72,14): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (소스 파일 '/DummyClient.cpp'을(를) 컴파일하는 중)
+  
+  코드를 생성하고 있습니다...
+  Enum.pb.cc
+  Protocol.pb.cc
+  Struct.pb.cc
+  코드를 생성하고 있습니다...
+DummyClient.obj : error LNK2019: "public: static void * __cdecl PoolAllocator::Alloc(int)" (?Alloc@PoolAllocator@@SAPEAXH@Z)"class ClientService * __cdecl xnew<class ClientService,class NetAddress,class std::shared_ptr<class IocpCore>,class `int __cdecl main(void)'::`2'::<lambda_1>,int>(class NetAddress &&,class std::shared_ptr<class IocpCore> &&,class `int __cdecl main(void)'::`2'::<lambda_1> &&,int &&)" (??$xnew@VClientService@@VNetAddress@@V?$shared_ptr@VIocpCore@@@std@@V<lambda_1>@?1??main@@YAHXZ@H@@YAPEAVClientService@@$$QEAVNetAddress@@$$QEAV?$shared_ptr@VIocpCore@@@std@@$$QEAV<lambda_1>@?1??main@@YAHXZ@$$QEAH@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
 DummyClient.obj : error LNK2019: "public: static void __cdecl PoolAllocator::Release(void *)" (?Release@PoolAllocator@@SAXPEAX@Z)"void __cdecl xdelete<class ClientService>(class ClientService *)" (??$xdelete@VClientService@@@@YAXPEAVClientService@@@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
 DummyClient.obj : error LNK2019: "public: __cdecl NetAddress::NetAddress(class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> >,unsigned short)" (??0NetAddress@@QEAA@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@G@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
 DummyClient.obj : error LNK2019: "public: static void __cdecl SocketUtils::Init(void)" (?Init@SocketUtils@@SAXXZ)main 함수에서 참조되는 확인할 수 없는 외부 기호

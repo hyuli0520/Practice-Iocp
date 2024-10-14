@@ -9,16 +9,6 @@ void GameSession::OnConnected()
 {
 	GSessionManager.Add(static_pointer_cast<GameSession>(shared_from_this()));
 
-	Protocol::C_ENTER_GAME cEnterGame;
-	auto session = std::static_pointer_cast<PacketSession>(shared_from_this());
-	auto success = ServerPacketHandler::Handle_C_ENTER_GAME(session, cEnterGame);
-
-	if (success == false)
-	{
-		cout << "Failed to Enter Game" << endl;
-		return;
-	}
-
 	{
 		DBConnection* dbConn = GDBConnectionPool->Pop();
 		mysqlx::Table table = dbConn->GetTable("player");
@@ -31,12 +21,6 @@ void GameSession::OnConnected()
 
 		GDBConnectionPool->Push(dbConn);
 	}
-
-	string input;
-	cin >> input;
-	Protocol::C_CHAT cChat;
-	cChat.set_msg(input);
-	ServerPacketHandler::Handle_C_CHAT(session, cChat);
 }
 
 void GameSession::OnDisconnected()
@@ -66,12 +50,6 @@ void GameSession::OnRecvPacket(BYTE* buffer, int32 len)
 	cout << "RecvBuffer : " << recvBuffer << endl;
 
 	cout << "OnRecv Len = " << len << endl;
-
-	string input;
-	cin >> input;
-	Protocol::C_CHAT cChat;
-	cChat.set_msg(input);
-	ServerPacketHandler::Handle_C_CHAT(session, cChat);
 }
 
 void GameSession::OnSend(int32 len)

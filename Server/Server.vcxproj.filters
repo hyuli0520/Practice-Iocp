@@ -27,9 +27,6 @@
     <ClCompile Include="Server.cpp">
       <Filter>Main</Filter>
     </ClCompile>
-    <ClCompile Include="ServerPacketHandler.cpp">
-      <Filter>Main</Filter>
-    </ClCompile>
     <ClCompile Include="Enum.pb.cc">
       <Filter>Protocol</Filter>
     </ClCompile>
@@ -53,6 +50,9 @@
     </ClCompile>
     <ClCompile Include="pch.cpp">
       <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerPacketHandler.cpp">
+      <Filter>Main</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

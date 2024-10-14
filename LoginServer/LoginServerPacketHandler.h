@@ -1,7 +1,7 @@
 #pragma once
 #include "Protocol.pb.h"
-#pragma once
-#include "Protocol.pb.h"
+
+class ServerPacketHandler;
 
 using PacketHandlerFunc = std::function<bool(PacketSessionRef&, BYTE*, int32)>;
 extern PacketHandlerFunc GPacketHandler[UINT16_MAX];
@@ -25,7 +25,7 @@ public:
 
 	// 받기
 	static bool Handle_C_LOGIN_GAME(PacketSessionRef& session, Protocol::C_LOGIN& pkt);
-	
+
 	// 보내기
 	template<typename T>
 	static SendBufferRef MakeSendBuffer(T& pkt, Protocol::PacketId id)

@@ -51,3 +51,7 @@ message C_LOGIN {
 	string name = 2;
 	string password = 3;
 }
+
+message REQUEST_ENTER_GAME {
+
+};

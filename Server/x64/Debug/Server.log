@@ -50,6 +50,7 @@ Protocol.proto(4,1): warning G1A4DC0EC: Import Enum.proto is unused.
   1개 파일이 복사되었습니다.
   C:\Users\User\Documents\GitHub\Practice-Iocp\Common\protoc\bin\*.h을(를) 찾을 수 없습니다.
   계속하려면 아무 키나 누르십시오 . . . 
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output 디렉터리가 슬래시로 끝나지 않습니다. Output 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
   pch.cpp
 C:\Users\User\Documents\GitHub\Practice-Iocp\Server\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996: 'std::iterator<std::input_iterator_tag,T,Distance,Pointer,Reference>': warning STL4015: The std::iterator class template (used as a base class to provide typedefs) is deprecated in C++17. (The <iterator> header is NOT deprecated.) The C++ Standard has never required user-defined iterators to derive from std::iterator. To fix this warning, stop deriving from std::iterator and start providing publicly accessible typedefs named iterator_category, value_type, difference_type, pointer, and reference. Note that value_type is required to be non-const, even for constant iterators. You can define _SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING or _SILENCE_ALL_CXX17_DEPRECATION_WARNINGS to suppress this warning.
 C:\Users\User\Documents\GitHub\Practice-Iocp\Server\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\devapi\common.h(391,10): warning C4996:         with
@@ -271,8 +272,50 @@ C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(24,47): warning C42
 C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(24,47): warning C4244:         ]
   (소스 파일 '/Room.cpp'을(를) 컴파일하는 중)
   
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(36,51): error C2248: 'ServerPacketHandler::MakeSendBuffer': private 멤버('ServerPacketHandler' 클래스에서 선언)에 액세스할 수 없습니다.
+  (소스 파일 '/Room.cpp'을(를) 컴파일하는 중)
+  C:\Users\User\Documents\GitHub\Practice-Iocp\Server\ServerPacketHandler.h(46,23):
+  'ServerPacketHandler::MakeSendBuffer' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\Server\ServerPacketHandler.h(9,7):
+  'ServerPacketHandler' 선언을 참조하십시오.
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(49,51): error C2248: 'ServerPacketHandler::MakeSendBuffer': private 멤버('ServerPacketHandler' 클래스에서 선언)에 액세스할 수 없습니다.
+  (소스 파일 '/Room.cpp'을(를) 컴파일하는 중)
+  C:\Users\User\Documents\GitHub\Practice-Iocp\Server\ServerPacketHandler.h(46,23):
+  'ServerPacketHandler::MakeSendBuffer' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\Server\ServerPacketHandler.h(9,7):
+  'ServerPacketHandler' 선언을 참조하십시오.
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(71,51): error C2248: 'ServerPacketHandler::MakeSendBuffer': private 멤버('ServerPacketHandler' 클래스에서 선언)에 액세스할 수 없습니다.
+  (소스 파일 '/Room.cpp'을(를) 컴파일하는 중)
+  C:\Users\User\Documents\GitHub\Practice-Iocp\Server\ServerPacketHandler.h(46,23):
+  'ServerPacketHandler::MakeSendBuffer' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\Server\ServerPacketHandler.h(9,7):
+  'ServerPacketHandler' 선언을 참조하십시오.
+  
 C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(79,28): warning C4244: '인수': 'const uint64'에서 'int32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/Room.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(81,51): error C2248: 'ServerPacketHandler::MakeSendBuffer': private 멤버('ServerPacketHandler' 클래스에서 선언)에 액세스할 수 없습니다.
+  (소스 파일 '/Room.cpp'을(를) 컴파일하는 중)
+  C:\Users\User\Documents\GitHub\Practice-Iocp\Server\ServerPacketHandler.h(46,23):
+  'ServerPacketHandler::MakeSendBuffer' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\Server\ServerPacketHandler.h(9,7):
+  'ServerPacketHandler' 선언을 참조하십시오.
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(109,51): error C2248: 'ServerPacketHandler::MakeSendBuffer': private 멤버('ServerPacketHandler' 클래스에서 선언)에 액세스할 수 없습니다.
+  (소스 파일 '/Room.cpp'을(를) 컴파일하는 중)
+  C:\Users\User\Documents\GitHub\Practice-Iocp\Server\ServerPacketHandler.h(46,23):
+  'ServerPacketHandler::MakeSendBuffer' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\Server\ServerPacketHandler.h(9,7):
+  'ServerPacketHandler' 선언을 참조하십시오.
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(124,51): error C2248: 'ServerPacketHandler::MakeSendBuffer': private 멤버('ServerPacketHandler' 클래스에서 선언)에 액세스할 수 없습니다.
+  (소스 파일 '/Room.cpp'을(를) 컴파일하는 중)
+  C:\Users\User\Documents\GitHub\Practice-Iocp\Server\ServerPacketHandler.h(46,23):
+  'ServerPacketHandler::MakeSendBuffer' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\Server\ServerPacketHandler.h(9,7):
+  'ServerPacketHandler' 선언을 참조하십시오.
   
   Server.cpp
 C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Server.cpp(53,15): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
@@ -284,9 +327,5 @@ C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Server.cpp(64,14): warning C
   ServerPacketHandler.cpp
   Utils.cpp
   코드를 생성하고 있습니다...
-C:\Users\User\Documents\GitHub\Practice-Iocp\Server\Room.cpp(89): warning C4715: 'Room::HandleLeavePlayer': 모든 제어 경로에서 값을 반환하지는 않습니다.
-C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\DBConnection.h(32): warning C4715: 'DBConnection::GetTable': 모든 제어 경로에서 값을 반환하지는 않습니다.
 C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\DBConnection.h(46): warning C4715: 'DBConnection::Select<char const *>': 모든 제어 경로에서 값을 반환하지는 않습니다.
-  Server.vcxproj -> C:\Users\User\Documents\GitHub\Practice-Iocp\Binaries\x64\Server.exe
-  'pwsh.exe'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
-  배치 파일이 아닙니다.
+C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\DBConnection.h(32): warning C4715: 'DBConnection::GetTable': 모든 제어 경로에서 값을 반환하지는 않습니다.

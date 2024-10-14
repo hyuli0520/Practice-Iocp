@@ -50,5 +50,9 @@
     <None Include="pch.h">
       <Filter>소스 파일\Main</Filter>
     </None>
+    <None Include="..\Common\protoc\bin\Enum.proto" />
+    <None Include="..\Common\protoc\bin\Protocol.proto" />
+    <None Include="..\Common\protoc\bin\Struct.proto" />
+    <None Include="vcpkg.json" />
   </ItemGroup>
 </Project>
