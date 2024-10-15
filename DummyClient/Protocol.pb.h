@@ -1809,9 +1809,10 @@ class C_LOGIN final :
 // -------------------------------------------------------------------
 
 class REQUEST_ENTER_GAME final :
-    public ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase /* @@protoc_insertion_point(class_definition:Protocol.REQUEST_ENTER_GAME) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Protocol.REQUEST_ENTER_GAME) */ {
  public:
   inline REQUEST_ENTER_GAME() : REQUEST_ENTER_GAME(nullptr) {}
+  ~REQUEST_ENTER_GAME() override;
   explicit PROTOBUF_CONSTEXPR REQUEST_ENTER_GAME(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
   REQUEST_ENTER_GAME(const REQUEST_ENTER_GAME& from);
@@ -1884,15 +1885,29 @@ class REQUEST_ENTER_GAME final :
   REQUEST_ENTER_GAME* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
     return CreateMaybeMessage<REQUEST_ENTER_GAME>(arena);
   }
-  using ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::CopyFrom;
-  inline void CopyFrom(const REQUEST_ENTER_GAME& from) {
-    ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::CopyImpl(*this, from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const REQUEST_ENTER_GAME& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const REQUEST_ENTER_GAME& from) {
+    REQUEST_ENTER_GAME::MergeImpl(*this, from);
   }
-  using ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::MergeFrom;
-  void MergeFrom(const REQUEST_ENTER_GAME& from) {
-    ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::MergeImpl(*this, from);
-  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
   public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(REQUEST_ENTER_GAME* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
@@ -1913,6 +1928,27 @@ class REQUEST_ENTER_GAME final :
 
   // accessors -------------------------------------------------------
 
+  enum : int {
+    kPacketFieldNumber = 1,
+  };
+  // .Protocol.C_ENTER_GAME packet = 1;
+  bool has_packet() const;
+  private:
+  bool _internal_has_packet() const;
+  public:
+  void clear_packet();
+  const ::Protocol::C_ENTER_GAME& packet() const;
+  PROTOBUF_NODISCARD ::Protocol::C_ENTER_GAME* release_packet();
+  ::Protocol::C_ENTER_GAME* mutable_packet();
+  void set_allocated_packet(::Protocol::C_ENTER_GAME* packet);
+  private:
+  const ::Protocol::C_ENTER_GAME& _internal_packet() const;
+  ::Protocol::C_ENTER_GAME* _internal_mutable_packet();
+  public:
+  void unsafe_arena_set_allocated_packet(
+      ::Protocol::C_ENTER_GAME* packet);
+  ::Protocol::C_ENTER_GAME* unsafe_arena_release_packet();
+
   // @@protoc_insertion_point(class_scope:Protocol.REQUEST_ENTER_GAME)
  private:
   class _Internal;
@@ -1921,7 +1957,10 @@ class REQUEST_ENTER_GAME final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
+    ::Protocol::C_ENTER_GAME* packet_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   };
+  union { Impl_ _impl_; };
   friend struct ::TableStruct_Protocol_2eproto;
 };
 // ===================================================================
@@ -2757,6 +2796,96 @@ inline void C_LOGIN::set_allocated_password(std::string* password) {
 // -------------------------------------------------------------------
 
 // REQUEST_ENTER_GAME
+
+// .Protocol.C_ENTER_GAME packet = 1;
+inline bool REQUEST_ENTER_GAME::_internal_has_packet() const {
+  return this != internal_default_instance() && _impl_.packet_ != nullptr;
+}
+inline bool REQUEST_ENTER_GAME::has_packet() const {
+  return _internal_has_packet();
+}
+inline void REQUEST_ENTER_GAME::clear_packet() {
+  if (GetArenaForAllocation() == nullptr && _impl_.packet_ != nullptr) {
+    delete _impl_.packet_;
+  }
+  _impl_.packet_ = nullptr;
+}
+inline const ::Protocol::C_ENTER_GAME& REQUEST_ENTER_GAME::_internal_packet() const {
+  const ::Protocol::C_ENTER_GAME* p = _impl_.packet_;
+  return p != nullptr ? *p : reinterpret_cast<const ::Protocol::C_ENTER_GAME&>(
+      ::Protocol::_C_ENTER_GAME_default_instance_);
+}
+inline const ::Protocol::C_ENTER_GAME& REQUEST_ENTER_GAME::packet() const {
+  // @@protoc_insertion_point(field_get:Protocol.REQUEST_ENTER_GAME.packet)
+  return _internal_packet();
+}
+inline void REQUEST_ENTER_GAME::unsafe_arena_set_allocated_packet(
+    ::Protocol::C_ENTER_GAME* packet) {
+  if (GetArenaForAllocation() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.packet_);
+  }
+  _impl_.packet_ = packet;
+  if (packet) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Protocol.REQUEST_ENTER_GAME.packet)
+}
+inline ::Protocol::C_ENTER_GAME* REQUEST_ENTER_GAME::release_packet() {
+  
+  ::Protocol::C_ENTER_GAME* temp = _impl_.packet_;
+  _impl_.packet_ = nullptr;
+#ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
+  auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
+  temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  if (GetArenaForAllocation() == nullptr) { delete old; }
+#else  // PROTOBUF_FORCE_COPY_IN_RELEASE
+  if (GetArenaForAllocation() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+#endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
+  return temp;
+}
+inline ::Protocol::C_ENTER_GAME* REQUEST_ENTER_GAME::unsafe_arena_release_packet() {
+  // @@protoc_insertion_point(field_release:Protocol.REQUEST_ENTER_GAME.packet)
+  
+  ::Protocol::C_ENTER_GAME* temp = _impl_.packet_;
+  _impl_.packet_ = nullptr;
+  return temp;
+}
+inline ::Protocol::C_ENTER_GAME* REQUEST_ENTER_GAME::_internal_mutable_packet() {
+  
+  if (_impl_.packet_ == nullptr) {
+    auto* p = CreateMaybeMessage<::Protocol::C_ENTER_GAME>(GetArenaForAllocation());
+    _impl_.packet_ = p;
+  }
+  return _impl_.packet_;
+}
+inline ::Protocol::C_ENTER_GAME* REQUEST_ENTER_GAME::mutable_packet() {
+  ::Protocol::C_ENTER_GAME* _msg = _internal_mutable_packet();
+  // @@protoc_insertion_point(field_mutable:Protocol.REQUEST_ENTER_GAME.packet)
+  return _msg;
+}
+inline void REQUEST_ENTER_GAME::set_allocated_packet(::Protocol::C_ENTER_GAME* packet) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  if (message_arena == nullptr) {
+    delete _impl_.packet_;
+  }
+  if (packet) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(packet);
+    if (message_arena != submessage_arena) {
+      packet = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, packet, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  _impl_.packet_ = packet;
+  // @@protoc_insertion_point(field_set_allocated:Protocol.REQUEST_ENTER_GAME.packet)
+}
 
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
