@@ -55,3 +55,7 @@ message C_LOGIN {
 message REQUEST_ENTER_GAME {
 	C_ENTER_GAME packet = 1;
 };
+
+message SUCCESS_LOGIN {
+
+}

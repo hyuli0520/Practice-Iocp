@@ -80,3 +80,13 @@ bool ServerPacketHandler::Handle_C_CHAT(PacketSessionRef& session, Protocol::C_C
 
 	return true;
 }
+
+bool ServerPacketHandler::Handle_REQUEST_ENTER(PacketSessionRef& session, Protocol::REQUEST_ENTER_GAME& pkt)
+{
+	Protocol::C_ENTER_GAME cEnterGame = pkt.packet();
+	auto success = ServerPacketHandler::Handle_C_ENTER_GAME(session, cEnterGame);
+	if (!success)
+		return false;
+
+	return true;
+}

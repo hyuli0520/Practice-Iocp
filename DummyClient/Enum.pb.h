@@ -88,12 +88,13 @@ enum PacketId : int {
   PKT_S_CHAT = 10,
   PKT_C_LOGIN = 11,
   PKT_REQUEST_ENTER = 12,
+  PKT_SUCCESS_LOGIN = 13,
   PacketId_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<int32_t>::min(),
   PacketId_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<int32_t>::max()
 };
 bool PacketId_IsValid(int value);
 constexpr PacketId PacketId_MIN = PKT_NONE;
-constexpr PacketId PacketId_MAX = PKT_REQUEST_ENTER;
+constexpr PacketId PacketId_MAX = PKT_SUCCESS_LOGIN;
 constexpr int PacketId_ARRAYSIZE = PacketId_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* PacketId_descriptor();

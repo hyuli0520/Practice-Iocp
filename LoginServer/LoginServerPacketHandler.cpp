@@ -1,5 +1,4 @@
 #include "pch.h"
-#include "ServerPacketHandler.h"
 
 PacketHandlerFunc GPacketHandler[UINT16_MAX];
 
@@ -21,10 +20,9 @@ bool LoginServerPacketHandler::Handle_C_LOGIN_GAME(PacketSessionRef& session, Pr
 		
 		if (success)
 		{
-			// 게임 서버에 입장시키기	
-			Protocol::C_ENTER_GAME cEnterGame;
-			auto sendBuffer = MakeSendBuffer(cEnterGame, Protocol::PacketId::PKT_C_ENTER_GAME);
-			session->Send(sendBuffer);
+			Protocol::SUCCESS_LOGIN successPkt;
+			auto successSendBuffer = MakeSendBuffer(successPkt, Protocol::PacketId::PKT_SUCCESS_LOGIN);
+			session->Send(successSendBuffer);
 		}
 		else
 		{

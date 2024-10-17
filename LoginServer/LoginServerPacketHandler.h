@@ -15,6 +15,7 @@ public:
 	{
 		for (int32 i = 0; i < UINT16_MAX; i++)
 			GPacketHandler[i] = Handle_INVALID;
+		GPacketHandler[Protocol::PacketId::PKT_C_LOGIN] = [](PacketSessionRef& session, BYTE* buffer, int32 len) {return HandlePacket<Protocol::C_LOGIN>(Handle_C_LOGIN_GAME, session, buffer, len); };
 	}
 
 	static bool HandlePacket(PacketSessionRef& session, BYTE* buffer, int32 len)
@@ -25,6 +26,16 @@ public:
 
 	// 받기
 	static bool Handle_C_LOGIN_GAME(PacketSessionRef& session, Protocol::C_LOGIN& pkt);
+
+	template<typename PacketType, typename ProcessFunc>
+	static bool HandlePacket(ProcessFunc func, PacketSessionRef& session, BYTE* buffer, int32 len)
+	{
+		PacketType pkt;
+		if (pkt.ParseFromArray(buffer + sizeof(PacketHeader), len - sizeof(PacketHeader)) == false)
+			return false;
+
+		return func(session, pkt);
+	}
 
 	// 보내기
 	template<typename T>
@@ -37,7 +48,7 @@ public:
 		PacketHeader* header = reinterpret_cast<PacketHeader*>(sendBuffer->Buffer());
 		header->size = packetSize;
 		header->id = id;
-		assert(pkt.SerializeToArray(sendBuffer->Buffer() + 4, dataSize));
+		ASSERT_CRASH(pkt.SerializeToArray(sendBuffer->Buffer() + 4, dataSize));
 		sendBuffer->Close(packetSize);
 
 		return sendBuffer;

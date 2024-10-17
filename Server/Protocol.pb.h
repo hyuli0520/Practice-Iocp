@@ -66,6 +66,9 @@ extern C_MOVEDefaultTypeInternal _C_MOVE_default_instance_;
 class REQUEST_ENTER_GAME;
 struct REQUEST_ENTER_GAMEDefaultTypeInternal;
 extern REQUEST_ENTER_GAMEDefaultTypeInternal _REQUEST_ENTER_GAME_default_instance_;
+class SUCCESS_LOGIN;
+struct SUCCESS_LOGINDefaultTypeInternal;
+extern SUCCESS_LOGINDefaultTypeInternal _SUCCESS_LOGIN_default_instance_;
 class S_CHAT;
 struct S_CHATDefaultTypeInternal;
 extern S_CHATDefaultTypeInternal _S_CHAT_default_instance_;
@@ -92,6 +95,7 @@ template<> ::Protocol::C_LEAVE_GAME* Arena::CreateMaybeMessage<::Protocol::C_LEA
 template<> ::Protocol::C_LOGIN* Arena::CreateMaybeMessage<::Protocol::C_LOGIN>(Arena*);
 template<> ::Protocol::C_MOVE* Arena::CreateMaybeMessage<::Protocol::C_MOVE>(Arena*);
 template<> ::Protocol::REQUEST_ENTER_GAME* Arena::CreateMaybeMessage<::Protocol::REQUEST_ENTER_GAME>(Arena*);
+template<> ::Protocol::SUCCESS_LOGIN* Arena::CreateMaybeMessage<::Protocol::SUCCESS_LOGIN>(Arena*);
 template<> ::Protocol::S_CHAT* Arena::CreateMaybeMessage<::Protocol::S_CHAT>(Arena*);
 template<> ::Protocol::S_DESPAWN* Arena::CreateMaybeMessage<::Protocol::S_DESPAWN>(Arena*);
 template<> ::Protocol::S_ENTER_GAME* Arena::CreateMaybeMessage<::Protocol::S_ENTER_GAME>(Arena*);
@@ -1963,6 +1967,124 @@ class REQUEST_ENTER_GAME final :
   union { Impl_ _impl_; };
   friend struct ::TableStruct_Protocol_2eproto;
 };
+// -------------------------------------------------------------------
+
+class SUCCESS_LOGIN final :
+    public ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase /* @@protoc_insertion_point(class_definition:Protocol.SUCCESS_LOGIN) */ {
+ public:
+  inline SUCCESS_LOGIN() : SUCCESS_LOGIN(nullptr) {}
+  explicit PROTOBUF_CONSTEXPR SUCCESS_LOGIN(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  SUCCESS_LOGIN(const SUCCESS_LOGIN& from);
+  SUCCESS_LOGIN(SUCCESS_LOGIN&& from) noexcept
+    : SUCCESS_LOGIN() {
+    *this = ::std::move(from);
+  }
+
+  inline SUCCESS_LOGIN& operator=(const SUCCESS_LOGIN& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline SUCCESS_LOGIN& operator=(SUCCESS_LOGIN&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const SUCCESS_LOGIN& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const SUCCESS_LOGIN* internal_default_instance() {
+    return reinterpret_cast<const SUCCESS_LOGIN*>(
+               &_SUCCESS_LOGIN_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    12;
+
+  friend void swap(SUCCESS_LOGIN& a, SUCCESS_LOGIN& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(SUCCESS_LOGIN* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(SUCCESS_LOGIN* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  SUCCESS_LOGIN* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<SUCCESS_LOGIN>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::CopyFrom;
+  inline void CopyFrom(const SUCCESS_LOGIN& from) {
+    ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::CopyImpl(*this, from);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::MergeFrom;
+  void MergeFrom(const SUCCESS_LOGIN& from) {
+    ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::MergeImpl(*this, from);
+  }
+  public:
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Protocol.SUCCESS_LOGIN";
+  }
+  protected:
+  explicit SUCCESS_LOGIN(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:Protocol.SUCCESS_LOGIN)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+  };
+  friend struct ::TableStruct_Protocol_2eproto;
+};
 // ===================================================================
 
 
@@ -2887,9 +3009,15 @@ inline void REQUEST_ENTER_GAME::set_allocated_packet(::Protocol::C_ENTER_GAME* p
   // @@protoc_insertion_point(field_set_allocated:Protocol.REQUEST_ENTER_GAME.packet)
 }
 
+// -------------------------------------------------------------------
+
+// SUCCESS_LOGIN
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

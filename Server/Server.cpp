@@ -64,7 +64,7 @@ int main()
 	auto host = inet_ntoa(addr_in.sin_addr);
 	cout << host << endl;
 	ServerServiceRef service = MakeShared<ServerService>(
-		NetAddress(CtoW(host), 7777),
+		NetAddress(CtoW(host), 6666),
 		MakeShared<IocpCore>(),
 		[]() {return MakeShared<GameSession>(); },
 		100);

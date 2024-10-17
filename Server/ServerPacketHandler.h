@@ -14,6 +14,7 @@ public:
 		for (int32 i = 0; i < UINT16_MAX; i++)
 			GPacketHandler[i] = Handle_INVALID;
 		GPacketHandler[Protocol::PacketId::PKT_C_ENTER_GAME] = [](PacketSessionRef& session, BYTE* buffer, int32 len) {return HandlePacket<Protocol::C_ENTER_GAME>(Handle_C_ENTER_GAME, session, buffer, len); };
+		GPacketHandler[Protocol::PacketId::PKT_REQUEST_ENTER] = [](PacketSessionRef& session, BYTE* buffer, int32 len) {return HandlePacket<Protocol::REQUEST_ENTER_GAME>(Handle_REQUEST_ENTER, session, buffer, len); };
 	}
 
 	static bool HandlePacket(PacketSessionRef& session, BYTE* buffer, int32 len)
@@ -29,6 +30,8 @@ public:
 	static bool Handle_C_MOVE(PacketSessionRef& session, Protocol::C_MOVE& pkt);
 
 	static bool Handle_C_CHAT(PacketSessionRef& session, Protocol::C_CHAT& pkt);
+
+	static bool Handle_REQUEST_ENTER(PacketSessionRef& session, Protocol::REQUEST_ENTER_GAME& pkt);
 
 	template<typename PacketType, typename ProcessFunc>
 	static bool HandlePacket(ProcessFunc func, PacketSessionRef& session, BYTE* buffer, int32 len)

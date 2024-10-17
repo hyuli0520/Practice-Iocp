@@ -24,6 +24,7 @@ enum PacketId
 	PKT_S_CHAT = 10;
 	PKT_C_LOGIN = 11;
 	PKT_REQUEST_ENTER = 12;
+	PKT_SUCCESS_LOGIN = 13;
 };
 
 enum CreatureState
