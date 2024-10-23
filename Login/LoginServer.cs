@@ -19,7 +19,7 @@ class LoginServer
             {
                 using (var stream = new StreamReader(context.Request.InputStream, context.Request.ContentEncoding))
                 {
-                    var success = CheckLogin("", "");
+                    var success = CheckLogin("admin", "1234");
                     if (success)
                     {
                         string responseString = "true";
@@ -58,6 +58,14 @@ class LoginServer
                         // 인덱스를 사용하여 데이터 접근
                         string password = table.GetString(table.GetOrdinal("password"));
                         Console.WriteLine($"Player: {playerName}, Password: {password}");
+                        if (name == playerName)
+                        {
+                            if (pw == password)
+                            {
+                                Console.WriteLine("success to login");
+                                return true;
+                            }
+                        }
                     }
 
                     connection.Close();
@@ -65,10 +73,10 @@ class LoginServer
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.ToString());
+                    return false;
                 }
             }
             return true;
         }
     }
-
 }
