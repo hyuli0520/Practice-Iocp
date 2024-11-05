@@ -19,22 +19,27 @@ class LoginServer
             {
                 using (var stream = new StreamReader(context.Request.InputStream, context.Request.ContentEncoding))
                 {
-                    var success = CheckLogin("admin", "1234");
+                    string? line;
+                    bool success = false;
+                    while ((line = stream.ReadLine()) != null)
+                    {
+                        string[] str = line.Split('&');
+                        success = CheckLogin(str[0], str[1]);
+                    }
+
+                    string responseString = "false";
                     if (success)
-                    {
-                        string responseString = "true";
-                        byte[] buffer = Encoding.UTF8.GetBytes(responseString);
-                        context.Response.ContentLength64 = buffer.Length;
-                        Stream output = context.Response.OutputStream;
-                        output.Write(buffer, 0, buffer.Length);
-
-                        output.Close();
-                        listener.Stop();
-                    }
+                        responseString = "true";
                     else
-                    {
+                        responseString = "false";
 
-                    }
+                    byte[] buffer = Encoding.UTF8.GetBytes(responseString);
+                    context.Response.ContentLength64 = buffer.Length;
+                    Stream output = context.Response.OutputStream;
+                    output.Write(buffer, 0, buffer.Length);
+
+                    output.Close();
+                    listener.Stop();
                 }
             }
         }
