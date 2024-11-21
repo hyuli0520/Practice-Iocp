@@ -29,9 +29,9 @@ class LoginServer
 
                     string responseString = "false";
                     if (success)
-                        responseString = "true";
+                        responseString = "success";
                     else
-                        responseString = "false";
+                        responseString = "fail";
 
                     byte[] buffer = Encoding.UTF8.GetBytes(responseString);
                     context.Response.ContentLength64 = buffer.Length;
@@ -72,9 +72,7 @@ class LoginServer
                             }
                         }
                     }
-
-                    connection.Close();
-                }
+                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.ToString());

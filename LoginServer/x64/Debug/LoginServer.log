@@ -1,6 +1,85 @@
-﻿  LoginServerPacketHandler.cpp
+﻿  pch.cpp
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\common.h(38,1): warning C4005: '_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING': 매크로 재정의
+  (소스 파일 '../LoginServer/pch.cpp'을(를) 컴파일하는 중)
+  C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\vcpkg_installed\x64-windows\x64-windows\include\mysqlx\common.h(38,1):
+  이전에 명령줄에서 선언된 '_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING'
+  
+  Enum.pb.cc
+  Protocol.pb.cc
+  Struct.pb.cc
+  코드를 생성하고 있습니다...
+  LoginServer.cpp
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServer.cpp(45,15): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (소스 파일 '/LoginServer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServer.cpp(56,14): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  (소스 파일 '/LoginServer.cpp'을(를) 컴파일하는 중)
+  
+  LoginServerPacketHandler.cpp
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(23,14): error C2039: 'SUCCESS_LOGIN': 'Protocol'의 멤버가 아닙니다.
+  (소스 파일 '/LoginServerPacketHandler.cpp'을(를) 컴파일하는 중)
+  C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\Protocol.pb.h(102,11):
+  'Protocol' 선언을 참조하십시오.
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(23,14): error C2065: 'SUCCESS_LOGIN': 선언되지 않은 식별자입니다.
+  (소스 파일 '/LoginServerPacketHandler.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(23,28): error C2146: 구문 오류: ';'이(가) 'successPkt' 식별자 앞에 없습니다.
+  (소스 파일 '/LoginServerPacketHandler.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(23,28): error C2065: 'successPkt': 선언되지 않은 식별자입니다.
+  (소스 파일 '/LoginServerPacketHandler.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(24,44): error C2065: 'successPkt': 선언되지 않은 식별자입니다.
+  (소스 파일 '/LoginServerPacketHandler.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(24,76): error C2838: 'PKT_SUCCESS_LOGIN': 멤버 선언의 정규화된 이름이 잘못되었습니다.
+  (소스 파일 '/LoginServerPacketHandler.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(24,76): error C2065: 'PKT_SUCCESS_LOGIN': 선언되지 않은 식별자입니다.
+  (소스 파일 '/LoginServerPacketHandler.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(25,18): error C3536: 'successSendBuffer': 초기화되기 전에 사용할 수 없습니다.
+  (소스 파일 '/LoginServerPacketHandler.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(25,11): error C2664: 'void Session::Send(SendBufferRef)': 인수 1을(를) 'int'에서 'SendBufferRef'(으)로 변환할 수 없습니다.
+  (소스 파일 '/LoginServerPacketHandler.cpp'을(를) 컴파일하는 중)
+  C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(25,18):
+  'std::shared_ptr<SendBuffer>::shared_ptr': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1570,5):
+  	'std::shared_ptr<SendBuffer>::shared_ptr(std::nullptr_t) noexcept'일 수 있습니다.
+  		C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(25,18):
+  		'std::shared_ptr<SendBuffer>::shared_ptr(std::nullptr_t) noexcept': 인수 1을(를) 'int'에서 'std::nullptr_t'(으)로 변환할 수 없습니다.
+  			C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(25,18):
+  			null 포인터 상수만 nullptr_t로 변환할 수 있습니다.
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1665,5):
+  	또는       'std::shared_ptr<SendBuffer>::shared_ptr(std::unique_ptr<_Ux,_Dx> &&)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1641,5):
+  	또는       'std::shared_ptr<SendBuffer>::shared_ptr(std::shared_ptr<_Ty2> &&) noexcept'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1631,5):
+  	또는       'std::shared_ptr<SendBuffer>::shared_ptr(const std::shared_ptr<_Ty2> &) noexcept'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1621,5):
+  	또는       'std::shared_ptr<SendBuffer>::shared_ptr(std::shared_ptr<_Ty2> &&,SendBuffer *) noexcept'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1615,5):
+  	또는       'std::shared_ptr<SendBuffer>::shared_ptr(const std::shared_ptr<_Ty2> &,SendBuffer *) noexcept'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1610,5):
+  	또는       'std::shared_ptr<SendBuffer>::shared_ptr(std::nullptr_t,_Dx,_Alloc)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1604,5):
+  	또는       'std::shared_ptr<SendBuffer>::shared_ptr(std::nullptr_t,_Dx)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1598,5):
+  	또는       'std::shared_ptr<SendBuffer>::shared_ptr(_Ux *,_Dx,_Alloc)'
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\memory(1590,5):
+  	또는       'std::shared_ptr<SendBuffer>::shared_ptr(_Ux *,_Dx)'
+  	C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(25,18):
+  	인수 목록 '(int)'을(를) 일치시키는 동안
+  C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\Session.h(30,10):
+  'Session::Send' 선언을 참조하십시오.
+  C:\Users\User\Documents\GitHub\Practice-Iocp\LoginServer\LoginServerPacketHandler.cpp(25,11):
+  인수 목록 '(int)'을(를) 일치시키는 동안
+  
+  LoginSession.cpp
+  ObjectUtils.cpp
   Utils.cpp
   코드를 생성하고 있습니다...
-  LoginServer.vcxproj -> C:\Users\User\Documents\GitHub\Practice-Iocp\Binaries\x64\LoginServer.exe
-  'pwsh.exe'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
-  배치 파일이 아닙니다.
+C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\DBConnection.h(32): warning C4715: 'DBConnection::GetTable': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\User\Documents\GitHub\Practice-Iocp\ServerCore\DBConnection.h(46): warning C4715: 'DBConnection::Select<char const *,char const *>': 모든 제어 경로에서 값을 반환하지는 않습니다.

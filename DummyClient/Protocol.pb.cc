@@ -178,19 +178,8 @@ struct REQUEST_ENTER_GAMEDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 REQUEST_ENTER_GAMEDefaultTypeInternal _REQUEST_ENTER_GAME_default_instance_;
-PROTOBUF_CONSTEXPR SUCCESS_LOGIN::SUCCESS_LOGIN(
-    ::_pbi::ConstantInitialized) {}
-struct SUCCESS_LOGINDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SUCCESS_LOGINDefaultTypeInternal()
-      : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SUCCESS_LOGINDefaultTypeInternal() {}
-  union {
-    SUCCESS_LOGIN _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SUCCESS_LOGINDefaultTypeInternal _SUCCESS_LOGIN_default_instance_;
 }  // namespace Protocol
-static ::_pb::Metadata file_level_metadata_Protocol_2eproto[13];
+static ::_pb::Metadata file_level_metadata_Protocol_2eproto[12];
 static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_Protocol_2eproto = nullptr;
 static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_Protocol_2eproto = nullptr;
 
@@ -281,12 +270,6 @@ const uint32_t TableStruct_Protocol_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::Protocol::REQUEST_ENTER_GAME, _impl_.packet_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Protocol::SUCCESS_LOGIN, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  ~0u,  // no _inlined_string_donated_
 };
 static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, -1, sizeof(::Protocol::C_ENTER_GAME)},
@@ -301,7 +284,6 @@ static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protode
   { 62, -1, -1, sizeof(::Protocol::S_CHAT)},
   { 70, -1, -1, sizeof(::Protocol::C_LOGIN)},
   { 79, -1, -1, sizeof(::Protocol::REQUEST_ENTER_GAME)},
-  { 86, -1, -1, sizeof(::Protocol::SUCCESS_LOGIN)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
@@ -317,7 +299,6 @@ static const ::_pb::Message* const file_default_instances[] = {
   &::Protocol::_S_CHAT_default_instance_._instance,
   &::Protocol::_C_LOGIN_default_instance_._instance,
   &::Protocol::_REQUEST_ENTER_GAME_default_instance_._instance,
-  &::Protocol::_SUCCESS_LOGIN_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_Protocol_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -336,7 +317,7 @@ const char descriptor_table_protodef_Protocol_2eproto[] PROTOBUF_SECTION_VARIABL
   "g\030\002 \001(\t\"5\n\007C_LOGIN\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002"
   " \001(\t\022\020\n\010password\030\003 \001(\t\"<\n\022REQUEST_ENTER_"
   "GAME\022&\n\006packet\030\001 \001(\0132\026.Protocol.C_ENTER_"
-  "GAME\"\017\n\rSUCCESS_LOGINb\006proto3"
+  "GAMEb\006proto3"
   ;
 static const ::_pbi::DescriptorTable* const descriptor_table_Protocol_2eproto_deps[2] = {
   &::descriptor_table_Enum_2eproto,
@@ -344,9 +325,9 @@ static const ::_pbi::DescriptorTable* const descriptor_table_Protocol_2eproto_de
 };
 static ::_pbi::once_flag descriptor_table_Protocol_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_Protocol_2eproto = {
-    false, false, 629, descriptor_table_protodef_Protocol_2eproto,
+    false, false, 612, descriptor_table_protodef_Protocol_2eproto,
     "Protocol.proto",
-    &descriptor_table_Protocol_2eproto_once, descriptor_table_Protocol_2eproto_deps, 2, 13,
+    &descriptor_table_Protocol_2eproto_once, descriptor_table_Protocol_2eproto_deps, 2, 12,
     schemas, file_default_instances, TableStruct_Protocol_2eproto::offsets,
     file_level_metadata_Protocol_2eproto, file_level_enum_descriptors_Protocol_2eproto,
     file_level_service_descriptors_Protocol_2eproto,
@@ -2597,46 +2578,6 @@ void REQUEST_ENTER_GAME::InternalSwap(REQUEST_ENTER_GAME* other) {
       file_level_metadata_Protocol_2eproto[11]);
 }
 
-// ===================================================================
-
-class SUCCESS_LOGIN::_Internal {
- public:
-};
-
-SUCCESS_LOGIN::SUCCESS_LOGIN(::PROTOBUF_NAMESPACE_ID::Arena* arena,
-                         bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase(arena, is_message_owned) {
-  // @@protoc_insertion_point(arena_constructor:Protocol.SUCCESS_LOGIN)
-}
-SUCCESS_LOGIN::SUCCESS_LOGIN(const SUCCESS_LOGIN& from)
-  : ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase() {
-  SUCCESS_LOGIN* const _this = this; (void)_this;
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:Protocol.SUCCESS_LOGIN)
-}
-
-
-
-
-
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SUCCESS_LOGIN::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::CopyImpl,
-    ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::MergeImpl,
-};
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SUCCESS_LOGIN::GetClassData() const { return &_class_data_; }
-
-
-
-
-
-
-
-::PROTOBUF_NAMESPACE_ID::Metadata SUCCESS_LOGIN::GetMetadata() const {
-  return ::_pbi::AssignDescriptors(
-      &descriptor_table_Protocol_2eproto_getter, &descriptor_table_Protocol_2eproto_once,
-      file_level_metadata_Protocol_2eproto[12]);
-}
-
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace Protocol
 PROTOBUF_NAMESPACE_OPEN
@@ -2687,10 +2628,6 @@ Arena::CreateMaybeMessage< ::Protocol::C_LOGIN >(Arena* arena) {
 template<> PROTOBUF_NOINLINE ::Protocol::REQUEST_ENTER_GAME*
 Arena::CreateMaybeMessage< ::Protocol::REQUEST_ENTER_GAME >(Arena* arena) {
   return Arena::CreateMessageInternal< ::Protocol::REQUEST_ENTER_GAME >(arena);
-}
-template<> PROTOBUF_NOINLINE ::Protocol::SUCCESS_LOGIN*
-Arena::CreateMaybeMessage< ::Protocol::SUCCESS_LOGIN >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Protocol::SUCCESS_LOGIN >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

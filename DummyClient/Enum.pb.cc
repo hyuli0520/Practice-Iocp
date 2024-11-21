@@ -32,21 +32,20 @@ const char descriptor_table_protodef_Enum_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\n\nEnum.proto\022\010Protocol*h\n\nPlayerType\022\024\n\020"
   "PLAYER_TYPE_NONE\020\000\022\026\n\022PLAYER_TYPE_KNIGHT"
   "\020\001\022\024\n\020PLAYER_TYPE_MAGE\020\002\022\026\n\022PLAYER_TYPE_"
-  "ARCHER\020\003*\223\002\n\010PacketId\022\014\n\010PKT_NONE\020\000\022\024\n\020P"
+  "ARCHER\020\003*\374\001\n\010PacketId\022\014\n\010PKT_NONE\020\000\022\024\n\020P"
   "KT_C_ENTER_GAME\020\001\022\024\n\020PKT_S_ENTER_GAME\020\002\022"
   "\024\n\020PKT_C_LEAVE_GAME\020\003\022\024\n\020PKT_S_LEAVE_GAM"
   "E\020\004\022\017\n\013PKT_S_SPAWN\020\005\022\021\n\rPKT_S_DESPAWN\020\006\022"
   "\016\n\nPKT_C_MOVE\020\007\022\016\n\nPKT_S_MOVE\020\010\022\016\n\nPKT_C"
   "_CHAT\020\t\022\016\n\nPKT_S_CHAT\020\n\022\017\n\013PKT_C_LOGIN\020\013"
-  "\022\025\n\021PKT_REQUEST_ENTER\020\014\022\025\n\021PKT_SUCCESS_L"
-  "OGIN\020\r*;\n\rCreatureState\022\010\n\004IDLE\020\000\022\n\n\006MOV"
-  "ING\020\001\022\n\n\006ATTACK\020\002\022\010\n\004DEAD\020\003*:\n\007MoveDir\022\010"
-  "\n\004NONE\020\000\022\006\n\002UP\020\001\022\010\n\004DOWN\020\002\022\010\n\004LEFT\020\003\022\t\n\005"
-  "RIGHT\020\004b\006proto3"
+  "\022\025\n\021PKT_REQUEST_ENTER\020\014*;\n\rCreatureState"
+  "\022\010\n\004IDLE\020\000\022\n\n\006MOVING\020\001\022\n\n\006ATTACK\020\002\022\010\n\004DE"
+  "AD\020\003*:\n\007MoveDir\022\010\n\004NONE\020\000\022\006\n\002UP\020\001\022\010\n\004DOW"
+  "N\020\002\022\010\n\004LEFT\020\003\022\t\n\005RIGHT\020\004b\006proto3"
   ;
 static ::_pbi::once_flag descriptor_table_Enum_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_Enum_2eproto = {
-    false, false, 535, descriptor_table_protodef_Enum_2eproto,
+    false, false, 512, descriptor_table_protodef_Enum_2eproto,
     "Enum.proto",
     &descriptor_table_Enum_2eproto_once, nullptr, 0, 0,
     schemas, file_default_instances, TableStruct_Enum_2eproto::offsets,
@@ -95,7 +94,6 @@ bool PacketId_IsValid(int value) {
     case 10:
     case 11:
     case 12:
-    case 13:
       return true;
     default:
       return false;

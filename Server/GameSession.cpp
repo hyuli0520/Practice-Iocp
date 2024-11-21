@@ -8,8 +8,12 @@
 void GameSession::OnConnected()
 {
 	GSessionManager.Add(static_pointer_cast<GameSession>(shared_from_this()));
+	auto session = GetPacketSessionRef();
 
 	cout << "Connect" << endl;
+
+	Protocol::C_ENTER_GAME packet;
+	ServerPacketHandler::Handle_C_ENTER_GAME(session, packet);
 }
 
 void GameSession::OnDisconnected()
