@@ -1,5 +1,8 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Microsoft.IdentityModel.Tokens;
+using MySql.Data.MySqlClient;
+using System.IdentityModel.Tokens.Jwt;
 using System.Net;
+using System.Security.Claims;
 using System.Text;
 
 class LoginServer
@@ -21,17 +24,27 @@ class LoginServer
                 {
                     string? line;
                     bool success = false;
+                    string? accessToken = null;
+                    string? refreshToken = null;
+                    string secretKey = "MyVeryLongAndSecureSecretKey12345";
                     while ((line = stream.ReadLine()) != null)
                     {
                         string[] str = line.Split('&');
-                        success = CheckLogin(str[0], str[1]);
+                        string username = str[0];
+                        string password = str[1];
+                        success = CheckLogin(username, password);
+                    
+                        if(success)
+                        {
+                            accessToken = GenerateJwtToken(username, secretKey, TimeSpan.FromMinutes(15));
+                            refreshToken = GenerateJwtToken(username, secretKey, TimeSpan.FromDays(7));
+                        }
                     }
 
-                    string responseString = "false";
-                    if (success)
-                        responseString = "success";
-                    else
-                        responseString = "fail";
+                    // Response: Access Token과 Refresh Token을 JSON 형식으로 반환
+                    string responseString = success
+                        ? $"{{\"accessToken\": \"{accessToken}\", \"refreshToken\": \"{refreshToken}\"}}"
+                        : "fail";
 
                     byte[] buffer = Encoding.UTF8.GetBytes(responseString);
                     context.Response.ContentLength64 = buffer.Length;
@@ -72,7 +85,7 @@ class LoginServer
                             }
                         }
                     }
-                 }
+                }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.ToString());
@@ -81,5 +94,21 @@ class LoginServer
             }
             return true;
         }
+    }
+
+    static string GenerateJwtToken(string username, string secretKey, TimeSpan tokenValidity)
+    {
+        var tokenHandler = new JwtSecurityTokenHandler();
+        var key = Encoding.UTF8.GetBytes(secretKey);
+
+        var tokenDescriptor = new SecurityTokenDescriptor
+        {
+            Subject = new ClaimsIdentity(new[] { new Claim("username", username) }),
+            Expires = DateTime.UtcNow.Add(tokenValidity), // 토큰 만료 시간
+            SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+        };
+
+        var token = tokenHandler.CreateToken(tokenDescriptor);
+        return tokenHandler.WriteToken(token);
     }
 }
