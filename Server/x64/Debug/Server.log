@@ -252,6 +252,33 @@ C:\Users\User\Documents\GitHub\Practice-Iocp\Server\vcpkg_installed\x64-windows\
   코드를 생성하고 있습니다...
   GameSession.cpp
   GameSessionManager.cpp
+  JWT.cpp
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\vcpkg_installed\x64-windows\x64-windows\include\jwt-cpp\base.h(96,24): warning C4244: 'return': '__int64'에서 'uint32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/JWT.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\User\Documents\GitHub\Practice-Iocp\Server\vcpkg_installed\x64-windows\x64-windows\include\jwt-cpp\jwt.h(2180,85): warning C4244: '인수': 'double'에서 '__time64_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/JWT.cpp'을(를) 컴파일하는 중)
+  C:\Users\User\Documents\GitHub\Practice-Iocp\Server\vcpkg_installed\x64-windows\x64-windows\include\jwt-cpp\jwt.h(2180,85):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\User\Documents\GitHub\Practice-Iocp\Server\vcpkg_installed\x64-windows\x64-windows\include\jwt-cpp\traits\kazuho-picojson\defaults.h(19,58):
+  	컴파일되는 클래스 템플릿 인스턴스화 'jwt::verifier<jwt::default_clock,jwt::traits::kazuho_picojson>'에 대한 참조를 확인하세요.
+  	C:\Users\User\Documents\GitHub\Practice-Iocp\Server\vcpkg_installed\x64-windows\x64-windows\include\jwt-cpp\jwt.h(3207,1):
+  	컴파일되는 클래스 템플릿 인스턴스화 'jwt::basic_claim<jwt::traits::kazuho_picojson>'에 대한 참조를 확인하세요.
+  	C:\Users\User\Documents\GitHub\Practice-Iocp\Server\vcpkg_installed\x64-windows\x64-windows\include\jwt-cpp\jwt.h(2178,8):
+  	클래스 템플릿 멤버 함수 'jwt::date jwt::basic_claim<jwt::traits::kazuho_picojson>::as_date(void) const'을(를) 컴파일하는 중입니다.
+  		C:\Users\User\Documents\GitHub\Practice-Iocp\Server\vcpkg_installed\x64-windows\x64-windows\include\jwt-cpp\jwt.h(2394,32):
+  		'jwt::payload<json_traits>::get_issued_at'에서 'jwt::basic_claim<jwt::traits::kazuho_picojson>::as_date'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              json_traits=jwt::traits::kazuho_picojson
+          ]
+  		C:\Users\User\Documents\GitHub\Practice-Iocp\Server\vcpkg_installed\x64-windows\x64-windows\include\jwt-cpp\jwt.h(3113,23):
+  		'jwt::verifier<jwt::default_clock,jwt::traits::kazuho_picojson>::{ctor}::<lambda_2>::operator ()'에서 'jwt::payload<json_traits>::get_issued_at'에 대한 첫 번째 참조를 확인하세요.
+          with
+          [
+              json_traits=jwt::traits::kazuho_picojson
+          ]
+  
   ObjectUtils.cpp
 C:\Users\User\Documents\GitHub\Practice-Iocp\Server\ObjectUtils.cpp(14,35): warning C4244: '인수': 'const int64'에서 'int32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/ObjectUtils.cpp'을(를) 컴파일하는 중)

@@ -1,6 +1,8 @@
-Package: vcpkg-cmake
-Version: 2023-05-04
+Package: jwt-cpp
+Version: 0.7.0
+Depends: picojson
 Architecture: x64-windows
 Multi-Arch: same
-Abi: f728485d0e8752333847e8df97bcd46b63ea2dcb7515e7031507138d46ab5c5c
+Abi: eb7d6e67425e6c1b953f5bdd9c5e90dcc251690cdcfae2e77852183811750b69
+Description: A header only library for creating and validating json web tokens in c++
 Status: install ok half-installed
