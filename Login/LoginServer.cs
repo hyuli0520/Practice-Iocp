@@ -32,7 +32,6 @@ class LoginServer
                         success = CheckLogin(username, password);
                     }
 
-                    // Response: Access Token과 Refresh Token을 JSON 형식으로 반환
                     string responseString = success ? "success" : "fail";
 
                     byte[] buffer = Encoding.UTF8.GetBytes(responseString);
