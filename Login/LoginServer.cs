@@ -9,7 +9,7 @@ class LoginServer
     static void Main(String[] args)
     {
         var listener = new HttpListener();
-        var connector = new MySqlConnection("Server=localhost;Port=3306;Database=sunnight;Uid=root;Pwd=1234");
+        var connector = "Server=localhost;Port=3306;Database=sunnight;Uid=root;Pwd=1234";
         listener.Prefixes.Add("http://localhost:3333/");
 
         listener.Start();
@@ -45,7 +45,7 @@ class LoginServer
 
         bool CheckLogin(string name, string pw)
         {
-            using (MySqlConnection connection = connector)
+            using (MySqlConnection connection = new MySqlConnection(connector)) // 새로운 연결을 매 요청마다 생성
             {
                 try
                 {
@@ -78,7 +78,6 @@ class LoginServer
                     return false;
                 }
             }
-            return true;
         }
     }
 }
