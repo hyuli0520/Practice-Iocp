@@ -1,6 +1,5 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using MySql.Data.MySqlClient;
-using System.IdentityModel.Tokens.Jwt;
 using System.Net;
 using System.Security.Claims;
 using System.Text;
@@ -13,9 +12,9 @@ class LoginServer
         var connector = new MySqlConnection("Server=localhost;Port=3306;Database=sunnight;Uid=root;Pwd=1234");
         listener.Prefixes.Add("http://localhost:3333/");
 
+        listener.Start();
         while (true)
         {
-            listener.Start();
             var context = listener.GetContext();
 
             if (context.Request.RawUrl == "/login")
@@ -40,7 +39,6 @@ class LoginServer
                     output.Write(buffer, 0, buffer.Length);
 
                     output.Close();
-                    listener.Stop();
                 }
             }
         }
