@@ -78,6 +78,7 @@ class LoginServer
                     return false;
                 }
             }
+            return false;
         }
     }
 }

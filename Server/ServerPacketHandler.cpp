@@ -22,7 +22,6 @@ bool ServerPacketHandler::Handle_C_ENTER_GAME(PacketSessionRef& session, Protoco
 	PlayerRef player = ObjectUtils::CreatePlayer(static_pointer_cast<GameSession>(session));
 
 	// 방에 입장
-	//GRoom.PushJob(make_shared<EnterJob>(GRoom, player));
 	GRoom->DoAsync(&Room::HandleEnterPlayer, player);
 
 	return true;
@@ -57,7 +56,7 @@ bool ServerPacketHandler::Handle_C_MOVE(PacketSessionRef& session, Protocol::C_M
 	if (room == nullptr)
 		return false;
 
-	//room->DoAsync(&Room::HandleMove);
+	room->DoAsync(&Room::HandleMove, pkt);
 
 	return true;
 }

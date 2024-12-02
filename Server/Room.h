@@ -3,20 +3,16 @@
 
 class Room : public JobQueue
 {
-	friend class EnterJob;
-	friend class LeaveJob;
-	friend class BroadCastJob;
-
 public:
 	Room();
 	virtual ~Room();
 
+	RoomRef GetRoomRef();
+
 	// 싱글쓰레드 환경인마냥 코딩
 	bool HandleEnterPlayer(PlayerRef player);
 	bool HandleLeavePlayer(PlayerRef player);
-
-	void HandleMove(Protocol::C_MOVE &pkt);
-
+	void HandleMove(Protocol::C_MOVE pkt);
 	void HandleChat(Protocol::C_CHAT& pkt);
 
 	void BroadCast(SendBufferRef sendBuffer, uint64 exceptId = 0);

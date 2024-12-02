@@ -6,7 +6,6 @@
 #include "Allocator.h"
 #include "Job.h"
 #include "Room.h"
-#include "DBConnectionPool.h"
 
 using namespace std;
 
@@ -75,15 +74,17 @@ int main()
 	{
 		GThreadManager->Launch([&service]()
 			{
-				while (true)
-				{
-					DoWorkerJob(service);
-				}
+				DoWorkerJob(service);
 			});
 	}
 
 	// Main Thread
-	DoWorkerJob(service);
+	//DoWorkerJob(service);
+
+	while (true)
+	{
+		this_thread::sleep_for(0.1s);
+	}
 
 	GThreadManager->Join();
 }

@@ -3,7 +3,6 @@
 #include "GameSessionManager.h"
 #include "Player.h"
 #include "ObjectUtils.h"
-#include <iomanip>
 
 void GameSession::OnConnected()
 {
@@ -11,9 +10,6 @@ void GameSession::OnConnected()
 	auto session = GetPacketSessionRef();
 
 	cout << "Connect" << endl;
-
-	Protocol::C_ENTER_GAME packet;
-	ServerPacketHandler::Handle_C_ENTER_GAME(session, packet);
 }
 
 void GameSession::OnDisconnected()

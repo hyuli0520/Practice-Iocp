@@ -15,6 +15,11 @@ Room::~Room()
 
 }
 
+RoomRef Room::GetRoomRef()
+{
+	return static_pointer_cast<Room>(shared_from_this());
+}
+
 bool Room::HandleEnterPlayer(PlayerRef player)
 {
 	bool success = EnterPlayer(player);
@@ -88,7 +93,7 @@ bool Room::HandleLeavePlayer(PlayerRef player)
 	cout << player->playerInfo->playerid() << " - Client Disconnected!" << endl;
 }
 
-void Room::HandleMove(Protocol::C_MOVE& pkt)
+void Room::HandleMove(Protocol::C_MOVE pkt)
 {
 	const uint64 objectId = pkt.playerinfo().playerid();
 	if (_players.find(objectId) == _players.end())
@@ -134,7 +139,7 @@ bool Room::EnterPlayer(PlayerRef player)
 
 	_players.insert(make_pair(player->playerInfo->playerid(), player));
 
-	player->room.store(GRoom);
+	player->room.store(GetRoomRef());
 
 	return true;
 }
