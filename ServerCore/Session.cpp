@@ -25,10 +25,10 @@ void Session::Send(SendBufferRef sendBuffer)
 		WRITE_LOCK;
 		_sendQueue.push(sendBuffer);
 		registerSend = _sendRegistered.exchange(true) == false;
-	}
 
-	if(registerSend)
-		RegisterSend();
+		if (registerSend)
+			RegisterSend();
+	}
 }
 
 bool Session::Connect()

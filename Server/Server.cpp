@@ -65,7 +65,7 @@ int main()
 	ServerServiceRef service = MakeShared<ServerService>(
 		NetAddress(CtoW(host), 6666),
 		MakeShared<IocpCore>(),
-		[]() {return MakeShared<GameSession>(); },
+		[=]() {return MakeShared<GameSession>(); },
 		100);
 
 	ASSERT_CRASH(service->Start());
